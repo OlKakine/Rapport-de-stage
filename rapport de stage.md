@@ -20,6 +20,8 @@ Selon la liste Forbes de 2017 "The World's Biggest Public Companies", SAP est le
 
 ![Forbes 2017 list of "The World's Biggest Public Companies"](Liste Forbes 2017.png)
 
+![test](Liste Forbes 2017.png)
+
 Pour synthétiser, un logiciel ERP est un moyen d'intégrer les données de tous les départements d'une entreprise en un seul système accessible par tous, afin de faciliter les échanges d'informations. Il n'a donc pas de fonction d'analyse.
 
 ### Les Chiffres
