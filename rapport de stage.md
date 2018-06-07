@@ -138,7 +138,7 @@ Le produit final proposé par Recast est un chatbot intelligent, qui m'a été p
 #### #ChooseFrance
 
 Comme dit précédemment, SAP à la volonté d'investir en France, car le Cloud est en plein essor et il y a une collaboration importante avec le président. \
-SAP était aussi l'entreprise phare de l'évènement très connu Viva Tech (le 24 Mai à Paris ) qui réunit plein d'entreprises et start-ups liées aux nouvelles technologies.
+SAP était aussi l'entreprise phare de l'évènement Viva Tech (le 24 Mai à Paris ) qui réunit plein d'entreprises et start-ups liées aux nouvelles technologies.
 
 ## L'organisation
 Nous allons voir que la migration vers le Cloud et que les besoins de rapidité et d'agilité étant toujours plus grands, cela à forcer plusieurs des grandes entreprises comme SAP et Google à adopter de nouvelles méthodes de travail. Mais qu'est ce que le Cloud exactement?
@@ -220,7 +220,8 @@ L'approche DevOps est en quelque sorte l'extension de la philosophie Agile en de
 Comme le nom l'indique, le principe de cette approche est de mélanger les rôles de Dev(eloppeur) et Op(ération)s. Traditionnellement, le développement de logiciels se faisait dans un cadre dit de silo: les devs ne faisait que programmer, souvent sur leurs propres machines, des parties du logiciel. Les Ops eux étaient chargés de la production et de la stabilité du logiciel: cela passe par l'intégration du code fournie par les devs, par la mise en place de l'architecture réseau (serveurs)... puis par la production en elle-même.
 
 Cela posait de multiples problèmes qui résultaient souvent en des délais et des coûts de production plus élevés que prévus. \
-On compte dans ces problèmes le fait que
+On compte dans ces problèmes le fait que:
+
 * les deux équipes rejetaient toujours la faute sur l'autre
 * chaque développeurs ayant son propre environnement (OS, versions de logiciels comme Java ...) ce qui peut créer des problèmes de compatibilité
 * les divergence d'objectifs: quantité et rapidité pour les devs, qualité pour les ops
@@ -296,7 +297,7 @@ Il existe plusieurs type de test, qui doivent être exécutés dans un certain o
 
 1. les tests unitaires ou "Unit tests"
 2. les tests d'intégration ou "Integration tests"
-3. les tests fonctionnels
+3. les tests fonctionnels / les tests exploratoires
 4. les tests de performances
 
 Les premiers acteurs de ces tests sont les développeurs. Ils s'occupent de faire les tests unitaires et d'intégration.
@@ -312,7 +313,7 @@ Il est et il sera toujours nécessaire de faire ces test manuellement. Cependant
 Un test fonctionnel est en fait un test d'intégration "end-to-end" ou de bout-en-bout c'est à dire sur l'intégralité des fonctionnalités (ou suivant un certain scénario) du logiciel. \
 Les tests de performances servent à s'assurer que le logiciel est assez robuste pour des nombres importants d'utilisateurs, de demandes ou d'échanges de données.
 
-Chez SAP, des sessions de tests fonctionnels non guidés sont organisés toutes les deux semaines. On appelle ces sessions "Testa Fiesta" et des personnes de toutes les équipes (pas seulement qualité) y participent.\
+Chez SAP, des sessions de tests fonctionnels non guidés sont organisés toutes les deux semaines, ce sont les tests exploratoires. On appelle ces sessions "Testa Fiesta" et des personnes de toutes les équipes (pas seulement qualité) y participent.\
 A la fin, les bugs rencontrés sont rapportés aux QA Leads.
 
 Une autre partie importante de la qualité est de s'assurer de la pertinence du produit. \
@@ -356,6 +357,110 @@ Finalement, j'ai pu commencé à coder ces tests automatiques. Et notamment j'ai
 
 ## Les Outils
 
+Lors de ce stage, j'ai utilisé et/ou découvert une multitude d'outils liés au travail en groupe, au Cloud, et aux tests.\
+La plupart de ces outils sont open-source et/ou développés par SAP.
+
+### Git: système de contrôle de version
+
+Un système de contrôle de version est un outil permettant d'apporter des modifications à un ensemble de fichiers, tout en gardant un historique des anciennes versions. Un tel système permet d'éviter les sauvegardes redondantes (par exemple quand le même fichier est stocké dans les dossiers "version 1" et "version 2").
+
+Cela devient particulièrement intéressant quand il prend en charge la participation collaborative sur un projet. Il fournit alors des fonctionnalités permettant à chacun d'apporter des modifications en même temps.
+
+Git est donc un système de contrôle de version open-source. Il est aujourd'hui le plus populaire de ces systèmes. \
+Il est utilisé pour tous types de projets: projet open-source, projet en entreprise, projet individuel...
+
+Le principe de Git est de copier l'intégralité des fichies d'un dossier, puis d'enregistrer une permière version ou premier "snapshot" qui est en fait un objet qui pointe vers l'ensemble des fichiers copiés. \
+Si une modification est apportée à un fichier, alors Git prend un autre "snapshot". Ce second snapshot pointera vers les mêmes fichiers que le premier, excepté pour le fichier modifié: pour lui, il pointera vers une seconde copie de ce fichier (on remarquera que la 1ere copie est conservée en mémoire).
+
+Pour être plus précis, l'utilisateur fait un certain nombres de modifications sur les fichiers, puis les ajoutes en même temps dans l'historique de Git, accompagné d'une description des changements. Cet ajout est appelé "commit". Un commit comprend donc un snapshot et un message associé. \
+On appelle "repository" la structure de donnée qui contient la suite des commits et les fichiers associés aux snapshot.
+
+Ainsi Git conserve un historique de toutes les commits de manière successive, et à tout moment on peut retrouver le dossier dans le même état que lors du commit de notre choix.
+
+Git fonctionne d'abord localement: le repository est stocké sur la machine local. Il est possible de partager ce repository sur un serveur: on a alors un remote repository. D'autres utilisateurs peuvent alors "cloner" ce repository et l'utiliser à leur tour localement.
+
+Quand ce deuxième utilisateur veut pousser ("push") ses changements sur le remote repository, il doit d'abord s'assurer qu'il n'est pas en retard par rapport à ce repository. \
+S'il l'est, il doit alors tirer ("pull") les changements, les intégrer dans son local repository et enfin il peut push ses changements.
+
+On peut noter comme fonctionnalités phares la possibilité de faire des branches. Une branche a un commit d'origine puis a ses propres commits. \
+Ainsi la première branche est celle crée à l'initialisation du repository, communément appelée "master".
+
+A partir d'un certain commit, on peut créer une nouvelle branche, qui va dévier de l'évolution de master, généralement pour ajouter une fonctionnalité. \
+Quand on a fini de développer la fonctionnalité, on mélange ("merge") cette branche à master.
+
+Si entre temps master a évolué, il faut intégrer les changements ajoutés sur master. S'il y a un conflit (quand les modifications que la branche auxiliaire sont sur la même partie de code que celles de master), il faut le résoudre avant le merge.
+
+Pour résumé, Git est un outil performant, open-source, robuste et sécurisé, qui facilite grandement la gestion de projets de tout types et qui assure la conservation de toutes les modifications.
+
+### Github
+
+Github est un logiciel Internet qui facilite l'utilisation des remotes repository. C'est sur cette plateforme que se déroule la plupart des projets collaboratifs, à l'aide de repository publiques.
+
+Il existe aussi la possibilité de créer des repository privés. C'est le cas pour SAP qui gère en fait tous ses projets sur Github. C'est une plateforme très pratique qui est compatible avec les processus automatisés.
+
+Sur Github, chaque repository comporte une page d'accueil qui est un fichier texte servant d'introduction au projet. Ce fichier est écrit dans un language particulier permettant une customisation lors de l'affichage.
+
+Ce language est le language **Markdown** (extension .md). C'est en fait un language de balisage ou "Mark-up language" tout comme le HTML. \
+Un language de balisage permet en fait de baliser sur du texte simple les parties particulières, comme les titres, les citations, les mots importants etc...
+
+Pour ma part j'ai rédigé ce rapport en markdown et j'ai stocké les fichies images, pdf, et le fichier texte sur un repository Github, ce qui me premet de retrouver des ancinennes versions si besoin. \
+Et plus important encore, cela m'a permis de pouvoir éditer mon rapport ausi bien chez moi qu'au travail, sans avoir besoin de déplacer les fichiers par clé USB.
+
+Github est un logiciel open-source lui même, qui jusqu'au récent rachat par Microsoft pour 7,5 milliards d'euros, n'appartenais à aucune entreprise.
+
+### Atom: éditeur de texte personalisable
+
+Cela m'amène à mon prochain outil: l'éditeur de texte open-source Atom qui est totalement gratuit et personalisable.
+
+Il contient initialement plein de fonctionnalités rendant l'édition de texte facile et agréable:
+
+* il existe un grand nombre de raccourcis clavier permettant des éditions rapides
+* l'interface est moderne et intuitive
+* il supporte la plupart des languages de programmation (highlight, indentation ...)
+* il supporte l'auto complétion, la correction d'orthographe
+* il supporte la multi édition (pratique quand l'on doit changer des noms à plusieurs endroits à la fois)
+* il supporte l'utilisation de git/github et la gestion de projets
+* il supporte l'utilisation de paneaux afin de pouvoir juxtaposer par exemple le texte markdown et son rendu graphique
+
+L'avantage d'Atom est de pouvoir absolument tout personaliser: la police, les couleurs, les thêmes graphiques de l'interface, les raccourcis ...
+
+Via l'installation de packages, il est possible de rajouter n'importe quelle fonctionnalité, comme supporter la visualisation de pdf, ajouter un navigateur web intégré...
+
+Ces packages sont développés par la communauté dans un language appelé CoffeeScript assez ressemblant au JavaScript. Il est par exemple possible de programmer ce qu'on appelle **snippet** (qui peuvent être spécifique à un language), qui sont des fonctions que l'on utilise lors de la rédaction. \
+Par exemple, en markdown, on peut écrire "toc" et cela génére un "table of content" ou table des matières.
+
+Après un certain temps d'adaptation, un tel éditeur de texte peut te faire gagner un temps considérable tout en réunissant plusieurs outils dans un seul. \
+L'intégration de Git et Github dans Atom est vraiment très pratique notamment pour la rédaction de mon rapport.
+
+Je connaissait déjà les outils Git, Github et Atom avant le stage.
+
+### IntelliJ: IDE pour Java
+
+Atom est un éditeur très pratique pour rédiger du texte et pour des languages disons plutôt légers type language de script comme python, HTML/CSS/JavaScript ...
+
+Un language de script est un language donc le code est lu, traduit et executé une étape à la fois. En général les programmes écrits en language de script sont plus léger et plus facile à exécuter, c'est pourquoi ils sont facile d'utilisation avec Atom.
+
+Pour des programmes plus gros, qui demandent plus de ressources, notamment dans des languages qui nécessitent beaucoup de dépendances et outils pour fonctionner, il est possible d'utiliser Atom mais ce n'est pas le plus optimisé.
+
+Il est conseillé d'utiliser ce qu'on appelle des IDEs ou "Integrated Development Envrironment" ou environnement intégré de développement. \
+Un IDE est en faite un gros logiciel qui permet de développer des logiciels donc de la programmation à la construction du logiciel.
+
+Les IDE sont souvent spécialisés dans un certain language. Par exemple Microsoft Visual Studio est spécialisé pour le C++, alors que IntelliJ est spécialisé pour le Java. \
+J'avais précemment déjà utilisé le C++ et donc Visual Studi. J'ai du m'adapté et apprendre le Java et IntelliJ pour le stage.
+
+Il faut savoir que le language utilisé n'a pas une si grande importance, tant que les principes de programmations sont compris. De plus le Java et le C++ sont plutôt proches dans leur style: \
+Ils sont tous les orientés objet, ce qui signifie que l'on manipule quasiment que des objets (structure de donnée) définies dans des classes dans les programmes, avec quelques grands principes comme l'héritage, le polymorphisme ...
+
+Ainsi j'ai pu m'adapter rapidement à l'utilisation de Java. IntelliJ m'a permis grâce à son interface intuitive de me familiariser plus facilement. \
+On peut citer comme fonctionnalités:
+
+* autocomplétion des noms de classes/objets correspondants aux conventions d'écritures pour Java
+* détection des erreurs lors de la rédaction du programme
+* aides lors de l'utilisation de fonctions à paramètres
+
+IntelliJ, comme la plupart des IDE, fournit des outils de debugging qui permettent par exemple de s'arrêter à une certaine étape du programme pour vérifier l'état des objets utilisés. \
+Il fournit aussi des outils de **tests coverage**: il peut calculer lors de l'exécution de tests sur le programme le pourcentage du code qui a été couvert/testé.
+dans
 # code
 ~~~~
 pandoc "rapport de stage.md" -o rapport.pdf -V fontsize=12pt -V linestretch=1 -V linkcolor=black --number-sections --table-of-contents -V documentclass=scrreprt
@@ -439,7 +544,8 @@ Assez naturellement, on va utiliser Jenkins pour créer un job qui se déclenche
 
 La première étape est de **build** le commit avec le reste du logiciel (qui est normalement stable), c'est à dire que l'on construit une nouvelle version du logiciel comprenant les changements apportés.
 
-Ensuite le build (on associe l'objet créer après l'étape build au nom de l'étape) passe une série de tests automatiques (donc d'intégration, de performances, des tests fonctionnels, des tests liés à des restrictions légales ...).
+Ensuite le build (on associe l'objet créer après l'étape build au nom de l'étape) passe une série de tests automatiques (donc d'intégration, de performances, des tests fonctionnels, des tests liés à des restrictions légales ...). \
+Il existe aussi des critères d'acceptation liés au test coverage: il doit être de plus de 90% lors de tous ces tests.
 
 Si tout les tests sont des succès, le commit reçoit un "+1", est validé et est intégré dans la branche principale Git. \
 Chez SAP, on rajoute une sécurité: il faut que quelqu'un vérifie le code (il fait un "code review") et donne son "+1". \
