@@ -18,13 +18,13 @@ SAP SE ou seulement SAP (SE signifiant "Societas Europaea" en latin) est une ent
 
 Selon la liste Forbes de 2017 "The World's Biggest Public Companies", SAP est le premier producteur européen de logiciels et le troisième mondial derrière Microsoft (1) et Oracle (2). SAP est donc en concurrence directe avec Oracle et Microsoft, notamment sur son produit phare qui est le **progiciel de gestion intégrée**: SAP ERP. (voir Annexes/Divers)
 
-![Forbes 2017 list of "The World's Biggest Public Companies"](Liste Forbes 2017.png)
+![Forbes 2017 list of "The World's Biggest Public Companies"](Liste_Forbes_2017.png)
 
 Pour synthétiser, un logiciel ERP est un moyen d'intégrer les données de tous les départements d'une entreprise en un seul système accessible par tous, afin de faciliter les échanges d'informations. Il n'a donc pas de fonction d'analyse.
 
 ### Les Chiffres
 
-![SAP Facts and Information](SAP facts and information.png)
+![SAP Facts and Information](SAP_facts_and_information.png)
 
 Les produits SAP sont utilisés par de nombreuses entreprises dans le monde entier.
 Anciennement, SAP était perçu comme un produit que seul les grandes entreprises avaient les moyens de s'offrir. Or aujourd'hui, la plupart des clients sont des PMEs (environ 80%), cela vient du fait que SAP a adapté son offre à différents publiques. \
@@ -110,7 +110,7 @@ On peut compter comme actions phare:
 * SAP promet de planter 5 millions d'arbres avant 2025
 * SAP vise à avoir un parc véhicule 100% électriques pour réduire l'empreinte carbone
 
-![17 United Nations Sustainable Development Goals](UN sustainabily goals.png)
+![17 United Nations Sustainable Development Goals](UN_sustainabily_goals.png)
 
 SAP offre aussi à ses employés des conditions de travail très accommodantes, avec notamment la possibilité de choisir ses horaires de travail, des distributeurs gratuits de boisson mis à disposition dans plusieurs endroits consacrés à la détente, la possibilité de faire du télétravail ...
 
@@ -124,7 +124,7 @@ La stratégie de SAP est de présenter un front uni aux clients. Il est très im
 
 De plus il n'y a pas de distinctions entre les différents produits: les produits sont entièrement intégrés et leur conception ne se fait pas non plus séparément. Le meilleur exemple est la Tour SAP en France où tous les produits sont développés au même endroit, ainsi que le R&D avec SAP Labs, et chaque année des start-up sont intégrées dans ce projet.
 
-![photo lors de la conférence de OneSAP et des stratégies futures](OneSAP conference.jpg)
+![photo lors de la conférence de OneSAP et des stratégies futures](OneSAP_conference.jpg)
 
 J'ai eu l'occasion d'observer l'intégration dans SAP d'une start-up nommée Recast.ai notamment présentée lors d'une conférence ayant pour but de présenter aux employés des félicitations pour les résultats, des encouragements et les stratégies futures. Lors de cette conférence, on a aussi eu la chance d'écouter le nouveau (depuis le Vendredi 13 Avril 2018) DG français Gérald Karsenti qui a expliqué que la France allait être le futur centre d'innovations et recherches pour SAP.
 
@@ -209,7 +209,7 @@ Les sprints durent souvent de 2 à 4 semaines (2 chez SAP). Ils s'enchainent jus
 
 Dans l'équipe de qualité, on utilise aussi la méthode kanban lors des mêlées quotidiennes. Ce système visuel permet de connaître l'avancement des tâches de tout le monde. On utilisait pour notre part des post-it avec le nom de la personne et la tâche associée sur un mur vitré, comme le montre ces photos.
 
-![Notre Kanban Board (photo)](kanban board.jpg)
+![Notre Kanban Board (photo)](kanban_board.jpg)
 
 Ainsi lors des meetings, les tâches sont déplacées vers les colonnes de droites, avec des explications.
 
