@@ -162,8 +162,8 @@ Initiale(s) du type de service + aaS signifiant "as a Service".
 Avec la migration vers le Cloud, on comprend bien que des nouveaux besoins sont apparus:
 
 * le logiciel doit être disponible sans interruptions et pourtant doit être mis à jour régulièrement
-* il faut pouvoir s'adapter très rapidement au feedback des utilisateurs
-* la notion de "scalability" ou mise à l'échelle est très importante: le nombre de clients ou de demandes ne doit pas être un problème, cela passe par des processus automatiques
+* il faut pouvoir s'adapter rapidement au feedback des utilisateurs
+* la notion de "scalability" ou mise à l'échelle est très importante: le nombre de clients ou la taille des données ne doit pas être un problème, cela passe par des processus automatiques
 
 Tout particulièrement pour les projets informatiques (sans prendre en compte la dimension Cloud), les anciennes approches de gestion de projets sont inefficaces, coûteuses et prônes à l'échec. \
 La plus répandue étant l'approche prédictive et séquentielle de type cycle en V ou "waterfall" (en cascade). Dans ces approches traditionnelles, le client exprime avec détail son besoin avec le cahier des charges, cette structure rigide laisse peu de place au changement.
@@ -192,7 +192,7 @@ Pour finir, les open-spaces créent une proximité entre les personnes favorisan
 
 ### Scrum: une méthode Agile
 
-La mise en pratique la plus populaire de management de projet est le Scrum. Il faut savoir qu'il y a des formations et donc des compétences demandées pour faire du Scrum. On distingue 3 rôles:
+La mise en pratique la plus populaire de management de projet dans les équipes de développeurs est le Scrum. Il faut savoir qu'il y a des formations et donc des compétences demandées pour faire du Scrum. On distingue 3 rôles:
 
 * le "Product Owner" (PO): il a une vision global du projet et du produit à réaliser, il est expert sur le sujet
 * le "Scrum Master": il garantit la bonne application de la méthodologie Scrum, qui souvent est aussi un développeur
@@ -207,19 +207,32 @@ Le projet se déroule alors en une succession de sprint ou run c'est à dire des
 
 Les sprints durent souvent de 2 à 4 semaines (2 chez SAP). Ils s'enchainent jusqu'à la fin de la conception du produit (décision du PO). Le Product Backlog peut être changé entre chaque sprint par le PO, mais lors d'un sprint, seul les développeurs décident des priorités.
 
-Dans l'équipe de qualité, on utilise aussi la méthode kanban lors des mêlées quotidiennes. Ce système visuel permet de connaître l'avancement des tâches de tout le monde. On utilisait pour notre part des post-it avec le nom de la personne et la tâche associée sur un mur vitré, comme le montre ces photos.
+Dans une des mes équipes, on utilise aussi la méthode kanban lors des mêlées quotidiennes. Ce système visuel permet de connaître l'avancement des tâches de tout le monde. On utilisait pour notre part des post-it avec le nom de la personne et la tâche associée sur un mur vitré, comme le montre ces photos.
 
 ![Notre Kanban Board (photo)](kanban_board.jpg)
 
 Ainsi lors des meetings, les tâches sont déplacées vers les colonnes de droites, avec des explications.
 
-### Life Cycle Management
+### DevOps: une extension Agile
 
-Comme expliqué précédemment, le logiciel SAC est développé en continu tout en proposant des versions utilisables (stables) aux clients. \
-Tout d'abord, les différentes équipes travaillant sur SAC possèdent une version du logiciel qui leur est propre et où ils implémentent leurs modifications: l'espace **DEV** qui est donc très instable. \
-Ensuite, deux fois par jours, toutes les modifications sont mélangés dans un espace commun appelé **MASTER**, qui est alors plus stable que DEV. \
-A chaque fin de semaines, l'espace MASTER est déployé dans l'espace **STABI**. Cet espace est censé être sans bugs mais il est encore tester pendant une semaine. \
-En fin à chaque fin de sprint, l'espace STABI est déployé dans l'espace **REL**(ease) qui est en fait le produit (pour l'instant en bêta) proposé aux clients.
+L'approche DevOps est en quelque sorte l'extension de la philosophie Agile en dehors du cadre d'une équipe de développeurs.
+
+Comme le nom l'indique, le principe de cette approche est de mélanger les rôles de Dev(eloppeur) et Op(ération)s. Traditionnellement, le développement de logiciels se faisait dans un cadre dit de silo: les devs ne faisait que programmer, souvent sur leurs propres machines, des parties du logiciel. Les Ops eux étaient chargés de la production et de la stabilité du logiciel: cela passe par l'intégration du code fournie par les devs, par la mise en place de l'architecture réseau (serveurs)... puis par la production en elle-même.
+
+Cela posait de multiples problèmes qui résultaient souvent en des délais et des coûts de production plus élevés que prévus. \
+On compte dans ces problèmes le fait que
+* les deux équipes rejetaient toujours la faute sur l'autre
+* chaque développeurs ayant son propre environnement (OS, versions de logiciels comme Java ...) ce qui peut créer des problèmes de compatibilité
+* les divergence d'objectifs: quantité et rapidité pour les devs, qualité pour les ops
+* les devs ne savent pas ce que font les ops et ne peuvent donc pas mettre en place des bonnes pratiques (pour les futurs tests et/ou futurs déploiement)
+* inversement les ops ne comprenent pas les problèmes auquels sont confrontés les devs
+
+La pratique DevOps consiste donc à ce que les équipes ops et devs travaillent mains dans les mains sur la production de logiciel, de la conception à la production en passant par des étapes de tests. Cela repose beaucoup sur l'automatisation des procédures que ce soit de tests ou d'intégration de code dans le logiciel. \
+On verra quels outils permettent la mise en place de cette pratique.
+
+Cette pratique prend une autre dimension avec le Cloud: idéalement, il serait possible à chaque ajout des développeurs de l'intégré directement dans l'application utilisée par les clients. \
+On parle de "Continous Deployment" ou déploiement en continu.
+Ce n'est pas encore tout à fait le cas pour le produit SAC. (voir Annexes/Divers/Livraison et déploiement de l'application)
 
 # Mission, outils et résultats
 
@@ -264,12 +277,10 @@ Dans les rôles de support, on compte:
 * la qualité
 
 L'infrastructure correspond à l'ensemble des ressources matérielles (puissance de calcul) et des outils fournis aux développeurs pour leur permettre de programmer dans les meilleurs conditions et dans des environnements uniformisés. \
-On peut citer comme métier associé celui d'Infrastructure Owner.
+On peut citer comme métier associé celui d'Infrastructure Owner responsable de la gestion/l'allocation de ces ressources. (voir Annexes/Divers et Outils)
 
-Le déploiement correspond à l'ensemble des procédures et outils utilisés pour optimiser (au niveau du temps, du traitement) les processus allant de la programmation à la publication dans le logiciel (partie REL).
-On peut citer comme métier associé celui de DevOps.
-
-Pour plus d'information sur ces deux parties, voir Annexes/Divers et Outils.
+Le déploiement correspond à l'ensemble des procédures et outils utilisés pour optimiser (au niveau du temps, du traitement) les processus allant de la programmation à la publication dans le logiciel.
+On peut citer comme métier associé celui de DevOps Manager responsable d'inculquer aux équipes les bonnes pratiques de l'approche DevOps.
 
 Vient ensuite la qualité, c'est sur cette partie que mon stage portait. \
 La qualité est l'ensemble des procédures permettant de vérifier le bon fonctionnement et la pertinence (par rapport au client) du logiciel.
@@ -323,7 +334,8 @@ solution prédictive de SAP"
 On retrouve donc les notions de tests automatisés, d'analytique et de prédictif vues précédemment. \
 Qu'en est-il de la notion de stratégie de tests?
 
-On appelle stratégie de test un ensemble de lignes directives qui expliquent comment les tests doivent être faits et donc quelles sont les pratiques qui doivent être mises en place pour permettre le test des développements. Par développement on entend les "bouts" de code rajoutés par les développeurs lors de ce qu'on appelle **commit**. \
+On appelle stratégie de test un ensemble de lignes directives qui expliquent comment les tests doivent être faits et donc quelles sont les pratiques qui doivent être mises en place pour permettre le test des développements.
+
 Une stratégie de tests comprend le format de la documentation, les outils de tests utilisés, les outils et le format pour les résultats des tests ...
 
 Ma mission était donc d'implémenter des tests fonctionnels automatisés, pour le logiciel SAC et plus particulièrement sur la partie concernant mon équipe de développeurs.
@@ -338,7 +350,7 @@ Pendant ce temps, je me familiarisais aussi avec mon environnement, mes équipie
 Dans ce but, j'ai participé directement à des réunions et des interviews/présentations individuels avec plusieurs membres des équipes, des repas le midi... J'ai fait beaucoup de recherches de mon côté pour me mettre à jour et pouvoir comprendre plus facilement tout ça.
 
 Ensuite quand je suis arrivé à un bon stade de compréhension global, j'ai pu commencer à pouvoir essayer de faire des tests d'intégrations automatisés, donc qui demandent des compétences en programmation et dans les outils/frameworks utilisés. \
-Ainsi j'ai refait une phase de découverte/assimilation qui a duré environ une semaine ou deux. Cette phase est particulièrement longue car il faut comprendre tout le travail qui a été fait précédemment. Ce travail représente un grand nombre de fonctions et de classes (on y reviendra) qui ont été mis en place justement pour pouvoir tester le logiciel. Pendant cette période j'ai aussi mis en place mon environement de développement.
+Ainsi j'ai refait une phase de découverte/assimilation qui a duré environ une semaine ou deux. Cette phase est particulièrement longue car il faut comprendre tout le travail qui a été fait précédemment. Ce travail représente un grand nombre de fonctions et de classes (on y reviendra) qui ont été mis en place justement pour pouvoir tester le logiciel. Pendant cette période j'ai aussi mis en place mon environnement de développement.
 
 Finalement, j'ai pu commencé à coder ces tests automatiques. Et notamment j'ai codé un test automatique pour le scénario BAT. Au delà du test automatique, j'ai pu apporter des modifications aux frameworks de test, ce qui demande des compétences et une compréhension plus poussée.
 
@@ -346,7 +358,7 @@ Finalement, j'ai pu commencé à coder ces tests automatiques. Et notamment j'ai
 
 # code
 ~~~~
-sudo pandoc "rapport de stage.md" -o rapport.pdf -V fontsize=12pt -V linestretch=1 -V linkcolor=black --number-sections --table-of-contents -V documentclass=scrreprt
+pandoc "rapport de stage.md" -o rapport.pdf -V fontsize=12pt -V linestretch=1 -V linkcolor=black --number-sections --table-of-contents -V documentclass=scrreprt
 ~~~~
 
 # Annexes
@@ -398,22 +410,67 @@ La partie infrastructure est très importante. Les développeurs doivent pouvoir
 
 De plus, tout le monde doit pouvoir utiliser le même environnement et pouvoir le mettre en place assez rapidement, aussi de manière automatique (on verra cela plus en détail dans la partie **Outils**).
 
-### Le déploiement
+### Livraison et déploiement de l'application
 
-Dans ce contexte plutôt récent de méthode Agile, les développeurs ont du se réadapter et se former aux nouvelles pratiques. Il faut savoir que des nouveaux outils et des nouvelles pratiques sont utilisés assez régulièrement. Le rôle de cette équipe est donc d'intégrer ces nouveautés et de vérifier leur bonne implémentation.
+Comme expliqué précédemment, le logiciel SAC est développé en continu tout en proposant des versions utilisables (stables) aux clients. \
+La pratique DevOps étant encore en cours d'implémentation pour le département SAC, les modifications du logiciel ne sont pas instantanées et prennent en fait 6 semaines avant d'être délivrées.
 
-Pour ce faire, ils ont aussi comme devoir de s'assurer de la formation des personnes concernées par ces nouveautés. \
-Toutes ces nouveautés s'inscrivent dans un cadre que l'on pourrait qualifié de prolongement de l'approche Agile en dehors de l'équipe de développement: la pratique **DevOps**.
+#### Life Cycle Management (LCM)
 
-Comme le nom l'indique, le principe de cette pratique est de mélanger les rôles de Dev(eloppeur) et Op(ération)s. Traditionnellement, le développement de logiciels se faisait dans un cadre dit de silo: les devs ne faisait que programmer, souvent sur leurs propres machines, des parties du logiciel. Les Ops eux étaient chargés de la production et de la stabilité du logiciel: cela passe par l'intégration du code fournie par les devs, par la mise en place de l'architecture réseau (serveurs)...
+Le logiciel est délivré sous forme de wave (par vague).
 
-Cela posait de multiples problèmes qui résultaient souvent en des délais et des coûts de production plus élevés que prévus. On compte dans ces problèmes le fait que les deux équipes rejetaient toujours la faute sur l'autre, le fait que chaque développeurs ayant son propre environnement (OS, versions de logiciels comme Java ...) ce qui peut créer des problèmes de compatibilité, les divergence d'objectifs: quantité et rapidité pour les devs, qualité pour les ops.
+Tout d'abord, les différentes équipes travaillant sur SAC possèdent une version du logiciel qui leur est propre et où ils implémentent leurs modifications: l'espace **DEV** qui est donc très instable.
 
-La pratique DevOps consiste donc à ce que les équipes ops et devs travaillent mains dans les mains sur la production de logiciel, de la conception à la production en passant par des étapes de tests. Cela repose beaucoup sur l'automatisation des procédures que ce soit de tests ou d'intégration de code dans le logiciel.
+Ensuite, deux fois par jours, toutes les modifications sont mélangés dans un espace commun appelé **MASTER**, qui est alors plus stable que DEV.
+
+Les développeurs travaillent sur Dev donc sur Master toute la durée d'un run (2 semaines).
+
+A chaque fin de run, l'espace MASTER est déployé dans l'espace **STABI**. Cet espace est censé être sans bugs mais il est encore tester pendant deux semaines.
+
+En fin à chaque fin de sprint, l'espace STABI est déployé dans l'espace **REL**(ease) qui est en fait le produit (pour l'instant en bêta) proposé aux clients.
+
+#### Intégration en continue
+
+Pour cette sous-partie, il est nécessaire d'avoir pris connaissance des Outils Git et Jenkins et Monsoon.
+
+Le principe est de pouvoir intégrer chaque commit proposé avec git directement dans la branche principale. Pour accepter cela il faut d'abord que ces commits passent une série de tests qui confirment qu'ils ne fassent pas dysfonctionner l'application.
+
+Assez naturellement, on va utiliser Jenkins pour créer un job qui se déclenche à chaque fois qu'un développeur propose un commit.
+
+La première étape est de **build** le commit avec le reste du logiciel (qui est normalement stable), c'est à dire que l'on construit une nouvelle version du logiciel comprenant les changements apportés.
+
+Ensuite le build (on associe l'objet créer après l'étape build au nom de l'étape) passe une série de tests automatiques (donc d'intégration, de performances, des tests fonctionnels, des tests liés à des restrictions légales ...).
+
+Si tout les tests sont des succès, le commit reçoit un "+1", est validé et est intégré dans la branche principale Git. \
+Chez SAP, on rajoute une sécurité: il faut que quelqu'un vérifie le code (il fait un "code review") et donne son "+1". \
+Ainsi seul un "+2" permet à un commit d'être intégré.
+
+#### Livraison en continue
+
+La livraison en continue est en fait le prolongement de l'intégration: une fois le commit intégré, il est automatiquement livré c'est à dire qu'il est prêt à être déployé dans l'application.
+
+#### Micro-services et déploiement en continu
+
+Pour cette sous-partie, il est nécessaire d'avoir pris connaissance des Outils Cloud Foundry.
+
+En principe le déploiement en continu revient a déployer directement chaque commit dans l'application finale. Il faut pour cela que des mesures soient prisent dès le développement du code.
+
+Chez SAP le déploiement en continu ne s'applique que pour l'espace Dev. En effet, dès qu'un commit est intégré, il est livré puis déployé automatiquement dans Dev. \
+Par contre, comme expliqué dans le LCM, Dev n'est pas l'application finale.
+
+La stratégie à appliquer pour permettre le déploiement en continu est de concevoir le logiciel par composants, et non comme un tout (l'approche dite monolithique).
+
+Chaque composants doit-être indépendant de tout le reste et possède ses propres ressources (database, UI ...). Un tel composant est en fait un micro-services. D'autres services appelés "Back-end" services sont assez similaires dans le fonctionnement mais sont moins contraignant.
+
+Les applications développés avec des micro-services sont les plus adaptées pour le développement Cloud. En effet, à l'aide de plateformes PaaS comme Cloud Foundry, il est facile et performant de connecter un ensemble de micro-services.
+
+Cela permet alors de faire des mises à jour sans "downtime" (sans que l'application soient inutilisable), de déployer des applications avec très peu de risque d'être "down", de multiplier ou réduire le nombre d'applications disponibles suivant les besoins...
+
+![Les différentes étapes pour les déploiements](DevOps_Continuous.png)
 
 ### HANA
 
-# Sources
+## Sources
 [Progiciel](https://fr.wikipedia.org/wiki/Progiciel)
 
 [PGI](https://fr.wikipedia.org/wiki/Progiciel_de_gestion_int%C3%A9gr%C3%A9)
@@ -449,3 +506,7 @@ La pratique DevOps consiste donc à ce que les équipes ops et devs travaillent 
 [Le manifeste Agile et ses principes](https://fr.wikipedia.org/wiki/Manifeste_agile)
 
 [Philosophie Agile et méthode Scrum](https://www.agiliste.fr/introduction-methodes-agiles/)
+
+[Les différents types de tests](http://www.test-recette.fr/)
+
+[Integration vs Delivery vs Deployment](https://www.atlassian.com/continuous-delivery/ci-vs-ci-vs-cd)
