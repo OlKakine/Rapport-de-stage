@@ -18,7 +18,7 @@ SAP SE ou seulement SAP (SE signifiant "Societas Europaea" en latin) est une ent
 
 Selon la liste Forbes de 2017 "The World's Biggest Public Companies", SAP est le premier producteur européen de logiciels et le troisième mondial derrière Microsoft (1) et Oracle (2). SAP est donc en concurrence directe avec Oracle et Microsoft, notamment sur son produit phare qui est le **progiciel de gestion intégrée**: SAP ERP. (voir Annexes/Divers)
 
-![Forbes 2017 list of "The World's Biggest Public Companies"](Liste Forbes 2017.png){ height=200px }
+![Forbes 2017 list of "The World's Biggest Public Companies"](Liste Forbes 2017.png)
 
 Pour synthétiser, un logiciel ERP est un moyen d'intégrer les données de tous les départements d'une entreprise en un seul système accessible par tous, afin de faciliter les échanges d'informations. Il n'a donc pas de fonction d'analyse.
 
@@ -98,7 +98,7 @@ Les points forts de SAP sont la qualité de ses produits et le fait qu'ils soien
 SAP consacre une place importante au développement durable et à l'écologie en général. \
 Un premier exemple est celui du la Tour SAP. Cette tour possède plusieurs certifications garantissant un impact environemental limité. On peut compter comme initiatives la mise en place de bornes de tri pour les déchets, la mise à disposition de gourdes et mugs pour limiter la consommation de plastique ...
 
-De manière plus générale, voici un autre slogan de SAP: \
+De manière plus générale, voici un autre slogan de SAP:
 
 > "Help the world run better and improve people's lives."
 
@@ -110,7 +110,7 @@ On peut compter comme actions phare:
 * SAP promet de planter 5 millions d'arbres avant 2025
 * SAP vise à avoir un parc véhicule 100% électriques pour réduire l'empreinte carbone
 
-![17 United Nations Sustainable Development Goals](UN sustainabily goals.png){ height=250px}
+![17 United Nations Sustainable Development Goals](UN sustainabily goals.png)
 
 SAP offre aussi à ses employés des conditions de travail très accommodantes, avec notamment la possibilité de choisir ses horaires de travail, des distributeurs gratuits de boisson mis à disposition dans plusieurs endroits consacrés à la détente, la possibilité de faire du télétravail ...
 
@@ -130,7 +130,7 @@ J'ai eu l'occasion d'observer l'intégration dans SAP d'une start-up nommée Rec
 
 Cela a été possible notamment grâce à une collaboration entre le CEO Bill McDermott et le président M.Macron et parce que le marché français est le plus dynamique aujourd'hui pour ce qui est du Cloud.
 
-![Intégration par SAP de Recast](recast.ai.png){ width=100px }
+![Intégration par SAP de Recast](recast.ai.png)
 
 La start-up Recast vient ajouter aux technologies intelligentes de SAP ce qu'on appelle le "Natural Language Processing". C'est en fait l'ensemble des technologies qui permettent aux machines de pouvoir manipuler de manière intelligente le language humain. L'approche actuelle est mathématique et est de considérer les mots ou plutôt leur sémantique comme des vecteurs dans un espace de grande dimension, ainsi (grossièrement) on peut donner une intention à une phrase en additionnant les vecteurs. \
 Le produit final proposé par Recast est un chatbot intelligent, qui m'a été présenté ainsi qu'à d'autres employés de SAP lors d'une session pratique "Hands-on".
@@ -155,7 +155,7 @@ Initiale(s) du type de service + aaS signifiant "as a Service".
 
 * IaaS ou Infrastructure aaS: cela permet d'accéder à du "hardware" (serveurs, disque durs, processeurs ...) directement via Internet. Ces ressources sont accessible à la demande et ne demande aucune installation ou coût de maintenance au client.
 
-![Cloud Computing Types and On Premise comparison](iaas-paas-saas-comparison-1024x759.jpg){ height=200px }
+![Cloud Computing Types and On Premise comparison](iaas-paas-saas-comparison-1024x759.jpg)
 
 ### Les nouveaux besoins
 
@@ -209,7 +209,7 @@ Les sprints durent souvent de 2 à 4 semaines (2 chez SAP). Ils s'enchainent jus
 
 Dans l'équipe de qualité, on utilise aussi la méthode kanban lors des mêlées quotidiennes. Ce système visuel permet de connaître l'avancement des tâches de tout le monde. On utilisait pour notre part des post-it avec le nom de la personne et la tâche associée sur un mur vitré, comme le montre ces photos.
 
-![Notre Kanban Board (photo)](kanban board.jpg){ height=200px }
+![Notre Kanban Board (photo)](kanban board.jpg)
 
 Ainsi lors des meetings, les tâches sont déplacées vers les colonnes de droites, avec des explications.
 
