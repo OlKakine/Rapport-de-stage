@@ -273,6 +273,7 @@ Pour plus d'information sur ces deux parties, voir Annexes/Divers et Outils.
 
 Vient ensuite la qualité, c'est sur cette partie que mon stage portait. \
 La qualité est l'ensemble des procédures permettant de vérifier le bon fonctionnement et la pertinence (par rapport au client) du logiciel.
+On peut citer comme métier associé celui de QA Lead ou responsable qualité.
 
 Dans ces trois rôles, il est important de remarquer qu'une grande partie du travail tend à rendre les processus automatiques. Et ce pour des questions de rapidité et donc de coût, et de mise à l'échelle.
 
@@ -280,24 +281,36 @@ Dans ces trois rôles, il est important de remarquer qu'une grande partie du tra
 
 Une grosse partie du travail sur la qualité se fait à travers les tests.
 
-Il existe plusieurs type de test:
+Il existe plusieurs type de test, qui doivent être exécutés dans un certain ordre:
 
-* les tests unitaires ou "Unit tests"
-* les tests d'intégration ou "Integration tests"*
-* les tests de performances
+1. les tests unitaires ou "Unit tests"
+2. les tests d'intégration ou "Integration tests"
+3. les tests fonctionnels
+4. les tests de performances
 
-Les tests unitaires sont écris souvent directement par les développeurs afin de tester des petites parties ou modules de code. Afin de tester ces modules, le reste du logiciel simulé à l'aide de ce qu'on appelle un "mock", c'est à dire qu'on imite l'extérieur en fournissant des données factices à cette partie du code afin de retrouver ou non les résultats attendus en sortie. Ces tests ne doivent en aucun cas dépendre de composants extérieurs comme des librairies.
+Les premiers acteurs de ces tests sont les développeurs. Ils s'occupent de faire les tests unitaires et d'intégration.
 
-Les tests d'intégrations quant à eux testent un ensemble de modules en se concentrant sur les interactions et échanges de données entre les différents modules. Généralement ces tests utilisent des vrai ressources. Ce sont les responsable qualité qui s'occupent de ces tests. \
-C'est en fait exactement ce que j'ai fait: ma mission consistait à mettre en œuvre des tests d'intégrations sur toute la partie gérée par mon équipe de développeurs.
+Les tests unitaires sont écris par les développeurs afin de tester une unité de programme (grossièrement une petite partie de code) ou module. \
+Pour tester ces modules, le reste du logiciel simulé à l'aide de ce qu'on appelle un "mock", c'est à dire qu'on imite l'extérieur en fournissant des données factices à cette partie du code afin de retrouver ou non les résultats attendus en sortie. Ces tests ne doivent en aucun cas dépendre de composants extérieurs comme des librairies.
 
+Les tests d'intégrations quant à eux vise à s'assurer que tout fonctionne lorsque l'on assemble plusieurs modules déjà testés unitairement.
+
+A un niveau plus élevé vient ensuite les ingénieurs qualités. Ils réalisent pour leur part les tests fonctionnels et ceux de performances. \
+Il est et il sera toujours nécessaire de faire ces test manuellement. Cependant ces tests ont aussi intérêt a être exécutés de manière automatique: par exemple les tests doivent être faits sur différentes plateformes, différents navigateurs web...
+
+Un test fonctionnel est en fait un test d'intégration "end-to-end" ou de bout-en-bout c'est à dire sur l'intégralité des fonctionnalités (ou suivant un certain scénario) du logiciel. \
 Les tests de performances servent à s'assurer que le logiciel est assez robuste pour des nombres importants d'utilisateurs, de demandes ou d'échanges de données.
 
-Son rôle premier est de s'assurer que le produit dans son ensemble corresponde aux attentes des clients. Pour ce faire, et dans la continuité de la méthode Agile, SAP propose un système de Bêta test. Cela fonctionne de la manière suivante: \
+Chez SAP, des sessions de tests fonctionnels non guidés sont organisés toutes les deux semaines. On appelle ces sessions "Testa Fiesta" et des personnes de toutes les équipes (pas seulement qualité) y participent.\
+A la fin, les bugs rencontrés sont rapportés aux QA Leads.
+
+Une autre partie importante de la qualité est de s'assurer de la pertinence du produit. \
+Pour ce faire, et dans la continuité de la méthode Agile, SAP propose un système de Bêta test. Cela fonctionne de la manière suivante: \
 Des clients se portent volontaire pour utiliser le logiciel qui est en cours de développement. Lors de cette utilisation, ils testent les fonctionnalités sur des cas réels pour vérifier la fiabilité, pour s'assurer qu'il correspond à leurs besoin etc... A la suite de ces tests, ils doivent communiquer les résultats à SAP. Lors de cette communication, ils rapportent les différents bug rencontrés et ils exposent un avis sur les fonctionnalités (déjà présentes ou non).
 
 Ainsi SAP sera capable de corriger les bugs, et plus important encore, SAP pourra décider de mettre en place les fonctionnalités qui présentent le plus de valeur ajoutée pour les clients et/ou modifier la manière dont les fonctionnalités existantes sont implémentées. \
-Comme expliqué précédemment, ce sera le rôle du PO (Product Owner) de décider quels modules sont à ajouter et dans quel sprint.
+Comme expliqué précédemment, ce sera le rôle du PO (Product Owner) de décider quels modules sont à ajouter et dans quel sprint. \
+On appelle cette méthode la co-innovation.
 
 ### Objectif
 
@@ -308,14 +321,12 @@ valider les développements effectués par l’organisation Advanced Analytics p
 solution prédictive de SAP"
 
 On retrouve donc les notions de tests automatisés, d'analytique et de prédictif vues précédemment. \
-Qu'en est-il de la notion de stratégie de tests? \
+Qu'en est-il de la notion de stratégie de tests?
 
 On appelle stratégie de test un ensemble de lignes directives qui expliquent comment les tests doivent être faits et donc quelles sont les pratiques qui doivent être mises en place pour permettre le test des développements. Par développement on entend les "bouts" de code rajoutés par les développeurs lors de ce qu'on appelle **commit**. \
 Une stratégie de tests comprend le format de la documentation, les outils de tests utilisés, les outils et le format pour les résultats des tests ...
 
-
-
-
+Ma mission était donc d'implémenter des tests fonctionnels automatisés, pour le logiciel SAC et plus particulièrement sur la partie concernant mon équipe de développeurs.
 
 ### Déroulement
 
@@ -378,14 +389,14 @@ Les 12 principes:
 * Les meilleures architectures, spécifications et conceptions émergent d'équipes auto-organisées.
 * À intervalles réguliers, l'équipe réfléchit aux moyens possibles pour devenir plus efficace. Puis elle s'adapte et modifie son mode de fonctionnement en conséquence.
 
-### Product Managers
-
 ### L'infrastructure
 
 On appelle infrastructure tout ce dont les développeurs ont besoin pour travailler. Cela prend en compte les équipements informatiques matériels ou réseaux, ainsi que l'environnement de développement utilisés par les développeurs. \
-Par environnement de développement on entend l'ensemble des logiciels, librairies, outils utilisés pour développer. \
-La partie infrastructure est très importante. Les développeurs doivent pouvoir accéder à des machines (et donc mémoire vive, processeurs) autres que celle sur laquelle ils codent. En fait, des qu'ils font autre chose que du codage, les développeurs font appel à des machines
-tout le monde doit pouvoir utiliser le même environnement et pouvoir le mettre en place assez rapidement, aussi de manière automatique (on verra cela plus en détail dans la partie **Outils**).
+Par environnement de développement on entend l'ensemble des logiciels, librairies, outils utilisés pour développer.
+
+La partie infrastructure est très importante. Les développeurs doivent pouvoir accéder à des machines (et donc mémoire vive, processeurs) autres que celle sur laquelle ils codent. En fait, des qu'ils font autre chose que du codage, les développeurs font appel à des machines virtuelles qui font des opérations à leur place.
+
+De plus, tout le monde doit pouvoir utiliser le même environnement et pouvoir le mettre en place assez rapidement, aussi de manière automatique (on verra cela plus en détail dans la partie **Outils**).
 
 ### Le déploiement
 
