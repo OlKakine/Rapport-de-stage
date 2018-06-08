@@ -132,7 +132,7 @@ Cela a été possible notamment grâce à une collaboration entre le CEO Bill Mc
 
 ![Intégration par SAP de Recast](recast.ai.png)
 
-La start-up Recast vient ajouter aux technologies intelligentes de SAP ce qu'on appelle le "Natural Language Processing". C'est en fait l'ensemble des technologies qui permettent aux machines de pouvoir manipuler de manière intelligente le language humain. L'approche actuelle est mathématique et est de considérer les mots ou plutôt leur sémantique comme des vecteurs dans un espace de grande dimension, ainsi (grossièrement) on peut donner une intention à une phrase en additionnant les vecteurs. \
+La start-up Recast vient ajouter aux technologies intelligentes de SAP ce qu'on appelle le "Natural langage Processing". C'est en fait l'ensemble des technologies qui permettent aux machines de pouvoir manipuler de manière intelligente le langage humain. L'approche actuelle est mathématique et est de considérer les mots ou plutôt leur sémantique comme des vecteurs dans un espace de grande dimension, ainsi (grossièrement) on peut donner une intention à une phrase en additionnant les vecteurs. \
 Le produit final proposé par Recast est un chatbot intelligent, qui m'a été présenté ainsi qu'à d'autres employés de SAP lors d'une session pratique "Hands-on".
 
 #### #ChooseFrance
@@ -252,7 +252,7 @@ Lors de ce stage, j'appartenais à deux équipes:
 
 #### L'équipe développeur
 
-Les deux équipes étaient situées dans deux open spaces différents, j'étais pour ma part dans celui de l'équipe de développeurs. Cette équipe travaille donc sur la partie du logiciel nommée "Ppro-core" ou "Predictive pro core", c'est à dire le coeur de la partie prédictive du logiciel.
+Les deux équipes étaient situées dans deux open spaces différents, j'étais pour ma part dans celui de l'équipe de développeurs. Cette équipe travaille donc sur la partie du logiciel nommée "Ppro-core" ou "Predictive pro core", c'est à dire le cœur de la partie prédictive du logiciel.
 On peut généralement séparer un logiciel en deux partie: le **Front-end** et le **Back-end**.
 
 Le Front-end correspond à la partie visible par l'utilisateur, ce qui correspond à l'UI et l'UX:
@@ -369,7 +369,7 @@ Cela devient particulièrement intéressant quand il prend en charge la particip
 Git est donc un système de contrôle de version open-source. Il est aujourd'hui le plus populaire de ces systèmes. \
 Il est utilisé pour tous types de projets: projet open-source, projet en entreprise, projet individuel...
 
-Le principe de Git est de copier l'intégralité des fichies d'un dossier, puis d'enregistrer une permière version ou premier "snapshot" qui est en fait un objet qui pointe vers l'ensemble des fichiers copiés. \
+Le principe de Git est de copier l'intégralité des fichiers d'un dossier, puis d'enregistrer une rermière version ou premier "snapshot" qui est en fait un objet qui pointe vers l'ensemble des fichiers copiés. \
 Si une modification est apportée à un fichier, alors Git prend un autre "snapshot". Ce second snapshot pointera vers les mêmes fichiers que le premier, excepté pour le fichier modifié: pour lui, il pointera vers une seconde copie de ce fichier (on remarquera que la 1ere copie est conservée en mémoire).
 
 Pour être plus précis, l'utilisateur fait un certain nombres de modifications sur les fichiers, puis les ajoutes en même temps dans l'historique de Git, accompagné d'une description des changements. Cet ajout est appelé "commit". Un commit comprend donc un snapshot et un message associé. \
@@ -380,7 +380,7 @@ Ainsi Git conserve un historique de toutes les commits de manière successive, e
 Git fonctionne d'abord localement: le repository est stocké sur la machine local. Il est possible de partager ce repository sur un serveur: on a alors un remote repository. D'autres utilisateurs peuvent alors "cloner" ce repository et l'utiliser à leur tour localement.
 
 Quand ce deuxième utilisateur veut pousser ("push") ses changements sur le remote repository, il doit d'abord s'assurer qu'il n'est pas en retard par rapport à ce repository. \
-S'il l'est, il doit alors tirer ("pull") les changements, les intégrer dans son local repository et enfin il peut push ses changements.
+S'il l'est, il doit alors tirer ("pull") les changements, les intégrer dans son repository local et enfin il peut pousser ses changements.
 
 On peut noter comme fonctionnalités phares la possibilité de faire des branches. Une branche a un commit d'origine puis a ses propres commits. \
 Ainsi la première branche est celle crée à l'initialisation du repository, communément appelée "master".
@@ -388,46 +388,46 @@ Ainsi la première branche est celle crée à l'initialisation du repository, co
 A partir d'un certain commit, on peut créer une nouvelle branche, qui va dévier de l'évolution de master, généralement pour ajouter une fonctionnalité. \
 Quand on a fini de développer la fonctionnalité, on mélange ("merge") cette branche à master.
 
-Si entre temps master a évolué, il faut intégrer les changements ajoutés sur master. S'il y a un conflit (quand les modifications que la branche auxiliaire sont sur la même partie de code que celles de master), il faut le résoudre avant le merge.
+Si entre temps master a évolué, il faut intégrer les changements ajoutés sur master. S'il y a un conflit (quand les modifications que la branche auxiliaire sont sur la même partie de code que celles de master), il faut le résoudre avant le mélange.
 
 Pour résumé, Git est un outil performant, open-source, robuste et sécurisé, qui facilite grandement la gestion de projets de tout types et qui assure la conservation de toutes les modifications.
 
 ### Github
 
-Github est un logiciel Internet qui facilite l'utilisation des remotes repository. C'est sur cette plateforme que se déroule la plupart des projets collaboratifs, à l'aide de repository publiques.
+Github est un logiciel Internet qui facilite l'utilisation des repository à distance. C'est sur cette plateforme que se déroule la plupart des projets collaboratifs, à l'aide de repository publiques.
 
 Il existe aussi la possibilité de créer des repository privés. C'est le cas pour SAP qui gère en fait tous ses projets sur Github. C'est une plateforme très pratique qui est compatible avec les processus automatisés.
 
-Sur Github, chaque repository comporte une page d'accueil qui est un fichier texte servant d'introduction au projet. Ce fichier est écrit dans un language particulier permettant une customisation lors de l'affichage.
+Sur Github, chaque repository comporte une page d'accueil qui est un fichier texte servant d'introduction au projet. Ce fichier est écrit dans un langage particulier permettant une customisation lors de l'affichage.
 
-Ce language est le language **Markdown** (extension .md). C'est en fait un language de balisage ou "Mark-up language" tout comme le HTML. \
-Un language de balisage permet en fait de baliser sur du texte simple les parties particulières, comme les titres, les citations, les mots importants etc...
+Ce langage est le langage **Markdown** (extension .md). C'est en fait un langage de balisage ou "Mark-up langage" tout comme le HTML. \
+Un langage de balisage permet en fait de baliser sur du texte simple les parties particulières, comme les titres, les citations, les mots importants etc...
 
-Pour ma part j'ai rédigé ce rapport en markdown et j'ai stocké les fichies images, pdf, et le fichier texte sur un repository Github, ce qui me premet de retrouver des ancinennes versions si besoin. \
-Et plus important encore, cela m'a permis de pouvoir éditer mon rapport ausi bien chez moi qu'au travail, sans avoir besoin de déplacer les fichiers par clé USB.
+Pour ma part j'ai rédigé ce rapport en markdown et j'ai stocké les fichiers images, pdf, et le fichier texte sur un repository Github, ce qui me permet de retrouver des anciennes versions si besoin. \
+Et plus important encore, cela m'a permis de pouvoir éditer mon rapport aussi bien chez moi qu'au travail, sans avoir besoin de déplacer les fichiers par clé USB.
 
 Github est un logiciel open-source lui même, qui jusqu'au récent rachat par Microsoft pour 7,5 milliards d'euros, n'appartenais à aucune entreprise.
 
 ### Atom: éditeur de texte personalisable
 
-Cela m'amène à mon prochain outil: l'éditeur de texte open-source Atom qui est totalement gratuit et personalisable.
+Cela m'amène à mon prochain outil: l'éditeur de texte open-source Atom qui est totalement gratuit et personnalisable.
 
 Il contient initialement plein de fonctionnalités rendant l'édition de texte facile et agréable:
 
 * il existe un grand nombre de raccourcis clavier permettant des éditions rapides
 * l'interface est moderne et intuitive
-* il supporte la plupart des languages de programmation (highlight, indentation ...)
+* il supporte la plupart des langages de programmation (coloration du texte, indentation ...)
 * il supporte l'auto complétion, la correction d'orthographe
 * il supporte la multi édition (pratique quand l'on doit changer des noms à plusieurs endroits à la fois)
 * il supporte l'utilisation de git/github et la gestion de projets
-* il supporte l'utilisation de paneaux afin de pouvoir juxtaposer par exemple le texte markdown et son rendu graphique
+* il supporte l'utilisation de panneaux afin de pouvoir juxtaposer par exemple le texte markdown et son rendu graphique
 
-L'avantage d'Atom est de pouvoir absolument tout personaliser: la police, les couleurs, les thêmes graphiques de l'interface, les raccourcis ...
+L'avantage d'Atom est de pouvoir absolument tout personnaliser: la police, les couleurs, les thèmes graphiques de l'interface, les raccourcis ...
 
 Via l'installation de packages, il est possible de rajouter n'importe quelle fonctionnalité, comme supporter la visualisation de pdf, ajouter un navigateur web intégré...
 
-Ces packages sont développés par la communauté dans un language appelé CoffeeScript assez ressemblant au JavaScript. Il est par exemple possible de programmer ce qu'on appelle **snippet** (qui peuvent être spécifique à un language), qui sont des fonctions que l'on utilise lors de la rédaction. \
-Par exemple, en markdown, on peut écrire "toc" et cela génére un "table of content" ou table des matières.
+Ces packages sont développés par la communauté dans un langage appelé CoffeeScript assez ressemblant au JavaScript. Il est par exemple possible de programmer ce qu'on appelle **snippet** (qui peuvent être spécifique à un langage), qui sont des fonctions que l'on utilise lors de la rédaction. \
+Par exemple, en markdown, on peut écrire "toc" et cela génère un "table of content" ou table des matières.
 
 Après un certain temps d'adaptation, un tel éditeur de texte peut te faire gagner un temps considérable tout en réunissant plusieurs outils dans un seul. \
 L'intégration de Git et Github dans Atom est vraiment très pratique notamment pour la rédaction de mon rapport.
@@ -436,25 +436,25 @@ Je connaissait déjà les outils Git, Github et Atom avant le stage.
 
 ### IntelliJ: IDE pour Java
 
-Atom est un éditeur très pratique pour rédiger du texte et pour des languages disons plutôt légers type language de script comme python, HTML/CSS/JavaScript ...
+Atom est un éditeur très pratique pour rédiger du texte et pour des langages disons plutôt légers type langage de script comme python, HTML/CSS/JavaScript ...
 
-Un language de script est un language donc le code est lu, traduit et executé une étape à la fois. En général les programmes écrits en language de script sont plus léger et plus facile à exécuter, c'est pourquoi ils sont facile d'utilisation avec Atom.
+Un langage de script est un langage donc le code est lu, traduit et exécuté une étape à la fois. En général les programmes écrits en langage de script sont plus léger et plus facile à exécuter, c'est pourquoi ils sont facile d'utilisation avec Atom.
 
-Pour des programmes plus gros, qui demandent plus de ressources, notamment dans des languages qui nécessitent beaucoup de dépendances et outils pour fonctionner, il est possible d'utiliser Atom mais ce n'est pas le plus optimisé.
+Pour des programmes plus gros, qui demandent plus de ressources, notamment dans des langages qui nécessitent beaucoup de dépendances et outils pour fonctionner, il est possible d'utiliser Atom mais ce n'est pas le plus optimisé.
 
 Il est conseillé d'utiliser ce qu'on appelle des IDEs ou "Integrated Development Envrironment" ou environnement intégré de développement. \
 Un IDE est en faite un gros logiciel qui permet de développer des logiciels donc de la programmation à la construction du logiciel.
 
-Les IDE sont souvent spécialisés dans un certain language. Par exemple Microsoft Visual Studio est spécialisé pour le C++, alors que IntelliJ est spécialisé pour le Java. \
-J'avais précemment déjà utilisé le C++ et donc Visual Studi. J'ai du m'adapté et apprendre le Java et IntelliJ pour le stage.
+Les IDE sont souvent spécialisés dans un certain langage. Par exemple Microsoft Visual Studio est spécialisé pour le C++, alors que IntelliJ est spécialisé pour le Java. \
+J'avais précedemment déjà utilisé le C++ et donc Visual Studio. J'ai du m'adapté et apprendre le Java et IntelliJ pour le stage.
 
-Il faut savoir que le language utilisé n'a pas une si grande importance, tant que les principes de programmations sont compris. De plus le Java et le C++ sont plutôt proches dans leur style: \
+Il faut savoir que le langage utilisé n'a pas une si grande importance, tant que les principes de programmations sont compris. De plus le Java et le C++ sont plutôt proches dans leur style: \
 Ils sont tous les orientés objet, ce qui signifie que l'on manipule quasiment que des objets (structure de donnée) définies dans des classes dans les programmes, avec quelques grands principes comme l'héritage, le polymorphisme ...
 
 Ainsi j'ai pu m'adapter rapidement à l'utilisation de Java. IntelliJ m'a permis grâce à son interface intuitive de me familiariser plus facilement. \
 On peut citer comme fonctionnalités:
 
-* autocomplétion des noms de classes/objets correspondants aux conventions d'écritures pour Java
+* auto complétion des noms de classes/objets correspondants aux conventions d'écritures pour Java
 * détection des erreurs lors de la rédaction du programme
 * aides lors de l'utilisation de fonctions à paramètres
 
