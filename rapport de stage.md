@@ -74,7 +74,7 @@ SAP a pour objectif pour le deuxième semestre de 2018 de faire converger ces de
 >"A Deeper Look Into SAP’s BI and Analytics Strategy", February 7, 2018 by Mike Flannagan
 
 C'est donc sur ce produit qui réunit la BI, le planning et l'analytique, qui se veut hybride (supporte à la fois les produits on-premise et les produits Cloud) et facile d'intégration, que j'ai travaillé.
-Ce produit à pour vocation d'être intégré dans la plateforme Cloud SAP: **SCP**.
+Ce produit a pour vocation d'être intégré dans la plateforme Cloud SAP: **SCP**.
 
 ### Philosophies et stratégies
 
@@ -120,7 +120,7 @@ On peut aussi remarquer la présence de coachs pouvant aider les employés à ga
 
 #### One Team OneSAP
 
-La stratégie de SAP est de présenter un front uni aux clients. Il est très important de faire savoir que l'entreprise à des stratégies claires et des buts précis, qui sont aussi partagés par les employés: innovation, qualité, confiance et sécurité, écologie ...
+La stratégie de SAP est de présenter un front uni aux clients. Il est très important de faire savoir que l'entreprise a des stratégies claires et des buts précis, qui sont aussi partagés par les employés: innovation, qualité, confiance et sécurité, écologie ...
 
 De plus il n'y a pas de distinctions entre les différents produits: les produits sont entièrement intégrés et leur conception ne se fait pas non plus séparément. Le meilleur exemple est la Tour SAP en France où tous les produits sont développés au même endroit, ainsi que le R&D avec SAP Labs, et chaque année des start-up sont intégrées dans ce projet.
 
@@ -132,7 +132,8 @@ Cela a été possible notamment grâce à une collaboration entre le CEO Bill Mc
 
 ![Intégration par SAP de Recast](recast.ai.png)
 
-La start-up Recast vient ajouter aux technologies intelligentes de SAP ce qu'on appelle le "Natural langage Processing". C'est en fait l'ensemble des technologies qui permettent aux machines de pouvoir manipuler de manière intelligente le langage humain. L'approche actuelle est mathématique et est de considérer les mots ou plutôt leur sémantique comme des vecteurs dans un espace de grande dimension, ainsi (grossièrement) on peut donner une intention à une phrase en additionnant les vecteurs. \
+La start-up Recast vient ajouter aux technologies intelligentes de SAP ce qu'on appelle le "Natural langage Processing". C'est en fait l'ensemble des technologies qui permettent aux machines de pouvoir manipuler de manière intelligente le langage humain. \
+L'approche actuelle est mathématique et est de considérer les mots ou plutôt leur sémantique comme des vecteurs dans un espace de grande dimension, ainsi (grossièrement) on peut donner une intention à une phrase en additionnant les vecteurs. \
 Le produit final proposé par Recast est un chatbot intelligent, qui m'a été présenté ainsi qu'à d'autres employés de SAP lors d'une session pratique "Hands-on".
 
 #### #ChooseFrance
@@ -141,19 +142,18 @@ Comme dit précédemment, SAP à la volonté d'investir en France, car le Cloud 
 SAP était aussi l'entreprise phare de l'évènement Viva Tech (le 24 Mai à Paris ) qui réunit plein d'entreprises et start-ups liées aux nouvelles technologies.
 
 ## L'organisation
-Nous allons voir que la migration vers le Cloud et que les besoins de rapidité et d'agilité étant toujours plus grands, cela à forcer plusieurs des grandes entreprises comme SAP et Google à adopter de nouvelles méthodes de travail. Mais qu'est ce que le Cloud exactement?
+Nous allons voir que la migration vers le Cloud et que les besoins de rapidité et d'agilité étant toujours plus grands, cela a forcé plusieurs des grandes entreprises comme SAP et Google à adopter de nouvelles méthodes de travail. Mais qu'est ce que le Cloud exactement?
 
 ### Le Cloud Computing
 
 On appelle Cloud Computing l'ensemble des services liés aux ordinateurs pouvant être délivrés à distance (souvent par le biais d'Internet). Ces services peuvent être de la puissance de calcul, du contenu web (sites), de l'espace de stockage ... \
-On peut distinguer plusieurs types de services (ce nombre de type augmente avec les nouvelles technologies), qui sont nommés en anglais suivant le même principe: \
-Initiale(s) du type de service + aaS signifiant "as a Service".
+On peut distinguer plusieurs types de services (ce nombre de type augmente avec les nouvelles technologies):
 
 * SaaS ou Software as a Service: c'est la possibilité d'utiliser un logiciel non pas directement sur notre machine (On Premise) mais sur le Cloud via un site Internet.
 
 * PaaS ou Platform aaS : cela fourni via un site Internet une plateforme de travail (framework), c'est à dire qu'il met à disposition des outils permettant de créer et déployer de nouveau services/applications sur Internet
 
-* IaaS ou Infrastructure aaS: cela permet d'accéder à du "hardware" (serveurs, disque durs, processeurs ...) directement via Internet. Ces ressources sont accessible à la demande et ne demande aucune installation ou coût de maintenance au client.
+* IaaS ou Infrastructure aaS: cela permet d'accéder à du "hardware" (serveurs, disque durs, processeurs ...) directement via Internet. Ces ressources sont accessible à la demande et ne nécessite aucune installation ou coût de maintenance au client.
 
 ![Cloud Computing Types and On Premise comparison](iaas-paas-saas-comparison-1024x759.jpg)
 
@@ -171,7 +171,8 @@ La plus répandue étant l'approche prédictive et séquentielle de type cycle e
 On observe alors ce qu'on appelle l'effet tunnel: le client exprime son besoin, un plan rigide est determiné avec une deadline, les développeurs se lancent dans le tunnel où le client n'a aucune visibilité puis il ressortent au moment de la deadline.\
 La deadline étant inamovible, il était très courant qu'à la fin, le produit soit délivré inabouti et en plus souvent en décalage par rapport au besoin initial qui a probablement changé en cours de route.
 
-Par exemple, l'approche en V consiste à planifier de façon séquentielle, et finie dans le temps, les étapes du développement. Pour cela, il faut faire une analyse complète du besoin, ce qui peur prendre des semaines pour les gros projets. \
+Par exemple, l'approche en V consiste à planifier de façon séquentielle, et finie dans le temps, les étapes du développement. Pour cela, il faut faire une analyse complète du besoin, ce qui peut prendre des semaines pour les gros projets.
+
 Ensuite les fonctionnalités sont implémentées une par une. Puis elles sont testées, intégrées et validées. Il y a donc peu de place pour intégrer des modifications et le fait de séparer le développement des tests amène à augmenter la difficulté donc le temps et le coût dédiés aux debugging.
 
 ![L'approche en V](cycle-en-v.png)
@@ -180,7 +181,7 @@ Aujourd'hui les besoins des clients évoluent constamment, car souvent le besoin
 
 ### La philosophie Agile
 
-Les compagnies informatiques ont alors lancer une réflexion sur les nouvelles approches à avoir. De ces réflexions sont ressorties ce qu'on appelle la philosophie Agile qui repose sur 4 valeurs et 12 principes. (voir Annexes/Divers)
+Les compagnies informatiques ont alors lancé une réflexion sur les nouvelles approches à avoir. De ces réflexions sont ressorties ce qu'on appelle la philosophie Agile qui repose sur 4 valeurs et 12 principes. (voir Annexes/Divers)
 
 Il faut retenir que le type de projet conseillé est incrémental (rapidement la première version puis on ajoute des fonctionnalités), la communication est primordiale notamment de vive-voix, une intégration et des tests continus, un échange avec le client afin de fournir le produit le plus adapté, l'embrassement des changements ... \
 On retrouve beaucoup cette philosophie chez SAP: le système de réunions qui est intégré avec les mails, l'utilisation de Skype, les différentes réunions/présentations...
@@ -211,7 +212,7 @@ Dans une des mes équipes, on utilise aussi la méthode kanban lors des mêlées
 
 ![Notre Kanban Board (photo)](kanban_board.jpg)
 
-Ainsi lors des meetings, les tâches sont déplacées vers les colonnes de droites, avec des explications.
+Ainsi lors des meetings, les tâches sont déplacées vers les colonnes de droite, avec des explications.
 
 ### DevOps: une extension Agile
 
@@ -231,7 +232,7 @@ On compte dans ces problèmes le fait que:
 La pratique DevOps consiste donc à ce que les équipes ops et devs travaillent mains dans les mains sur la production de logiciel, de la conception à la production en passant par des étapes de tests. Cela repose beaucoup sur l'automatisation des procédures que ce soit de tests ou d'intégration de code dans le logiciel. \
 On verra quels outils permettent la mise en place de cette pratique.
 
-Cette pratique prend une autre dimension avec le Cloud: idéalement, il serait possible à chaque ajout des développeurs de l'intégré directement dans l'application utilisée par les clients. \
+Cette pratique prend une autre dimension avec le Cloud: idéalement, il serait possible à chaque ajout des développeurs de l'intégrer directement dans l'application utilisée par les clients. \
 On parle de "Continous Deployment" ou déploiement en continu.
 Ce n'est pas encore tout à fait le cas pour le produit SAC. (voir Annexes/Divers/Livraison et déploiement de l'application)
 
@@ -265,11 +266,11 @@ Le Back-end correspond à la partie "cachée" du logiciel: c'est celle qui impl�
 Mon équipe de développeur quant à elle a un rôle plutôt Back-end, bien que l'algorithme le plus fondamental est implémenté par une autre équipe. Cet algorithme est le noyau prédictif, qui est en cours de développement et qui permet de grâce à l'IA et au ML de faire des analyses prédictives sur la base de donnée HANA. \
 Cet algorithme provient d'une ancienne start-up rachetée par SAP: Kxen. Une bonne partie des personnes travaillant aujourd'hui autour de ce produit faisaient alors partie de Kxen.
 
-Ainsi le rôle de cette équipe et d'implémenter les échanges avec le noyau prédictif, HANA, et la UI sur toutes la parties du logiciel SAC concernant la manipulation de modèle prédictif. Pour rappel, un modèle prédictif permet à partir d'un set de données de prévoir l'évolution d'une autre donnée, qui peut être par exemple si oui ou non un prospect va probablement acheter un produit SAP.
+Ainsi le rôle de cette équipe et d'implémenter les échanges avec le noyau prédictif, HANA, et la UI sur toutes la partie du logiciel SAC concernant la manipulation de modèle prédictif. Pour rappel, un modèle prédictif permet à partir d'un set de données de prévoir l'évolution d'une autre donnée, qui peut être par exemple si oui ou non un prospect va probablement acheter un produit SAP.
 
 #### L'équipe transversale
 
-Mon équipe initiale est celle responsable de support du développement de SAC. C'est donc une équipe transversale qui communique avec toutes les équipes s'occupant du développement de ce produit, que ce soit des équipes de développeurs ou des "Product Managers" (voir Annexes/Product Managers).
+Mon équipe initiale est celle responsable de support du développement de SAC. C'est donc une équipe transversale qui communique avec toutes les équipes s'occupant du développement de ce produit, que ce soit des équipes de développeurs ou des "Product Managers" (c'est quelqu'un qui possède une vision long terme du projet).
 
 Dans les rôles de support, on compte:
 
@@ -305,20 +306,21 @@ Les premiers acteurs de ces tests sont les développeurs. Ils s'occupent de fair
 Les tests unitaires sont écris par les développeurs afin de tester une unité de programme (grossièrement une petite partie de code) ou module. \
 Pour tester ces modules, le reste du logiciel simulé à l'aide de ce qu'on appelle un "mock", c'est à dire qu'on imite l'extérieur en fournissant des données factices à cette partie du code afin de retrouver ou non les résultats attendus en sortie. Ces tests ne doivent en aucun cas dépendre de composants extérieurs comme des librairies.
 
-Les tests d'intégrations quant à eux vise à s'assurer que tout fonctionne lorsque l'on assemble plusieurs modules déjà testés unitairement.
+Les tests d'intégrations quant à eux vise à s'assurer que tout fonctionne lorsque l'on assemble plusieurs modules déjà testés unitairement (et leurs dépendances).
 
 A un niveau plus élevé vient ensuite les ingénieurs qualités. Ils réalisent pour leur part les tests fonctionnels et ceux de performances. \
-Il est et il sera toujours nécessaire de faire ces test manuellement. Cependant ces tests ont aussi intérêt a être exécutés de manière automatique: par exemple les tests doivent être faits sur différentes plateformes, différents navigateurs web...
+Il est et il sera toujours nécessaire de faire ces tests manuellement. Cependant ces tests ont aussi intérêt a être exécutés de manière automatique: par exemple les tests doivent être faits sur différentes plateformes, différents navigateurs web...
 
 Un test fonctionnel est en fait un test d'intégration "end-to-end" ou de bout-en-bout c'est à dire sur l'intégralité des fonctionnalités (ou suivant un certain scénario) du logiciel. \
-Les tests de performances servent à s'assurer que le logiciel est assez robuste pour des nombres importants d'utilisateurs, de demandes ou d'échanges de données.
+Les tests de performances servent à s'assurer que le logiciel est assez robuste pour des nombre importants d'utilisateurs, de demandes ou d'échanges de données.
 
 Chez SAP, des sessions de tests fonctionnels non guidés sont organisés toutes les deux semaines, ce sont les tests exploratoires. On appelle ces sessions "Testa Fiesta" et des personnes de toutes les équipes (pas seulement qualité) y participent.\
 A la fin, les bugs rencontrés sont rapportés aux QA Leads.
 
 Une autre partie importante de la qualité est de s'assurer de la pertinence du produit. \
 Pour ce faire, et dans la continuité de la méthode Agile, SAP propose un système de Bêta test. Cela fonctionne de la manière suivante: \
-Des clients se portent volontaire pour utiliser le logiciel qui est en cours de développement. Lors de cette utilisation, ils testent les fonctionnalités sur des cas réels pour vérifier la fiabilité, pour s'assurer qu'il correspond à leurs besoin etc... A la suite de ces tests, ils doivent communiquer les résultats à SAP. Lors de cette communication, ils rapportent les différents bug rencontrés et ils exposent un avis sur les fonctionnalités (déjà présentes ou non).
+Des clients se portent volontaire pour utiliser le logiciel qui est en cours de développement. Lors de cette utilisation, ils testent les fonctionnalités sur des cas réels pour vérifier la fiabilité, pour s'assurer qu'il correspond à leurs besoin etc... \
+A la suite de ces tests, ils doivent communiquer les résultats à SAP. Lors de cette communication, ils rapportent les différents bug rencontrés et ils exposent un avis sur les fonctionnalités (déjà présentes ou non).
 
 Ainsi SAP sera capable de corriger les bugs, et plus important encore, SAP pourra décider de mettre en place les fonctionnalités qui présentent le plus de valeur ajoutée pour les clients et/ou modifier la manière dont les fonctionnalités existantes sont implémentées. \
 Comme expliqué précédemment, ce sera le rôle du PO (Product Owner) de décider quels modules sont à ajouter et dans quel sprint. \
@@ -345,7 +347,7 @@ Ma mission était donc d'implémenter des tests fonctionnels automatisés, pour 
 
 Les deux premières semaines ont été consacrées à se familiariser avec le logiciel SAC: ce qu'il fait, comment il fait, dans quel but etc... \
 Pour ce faire et pour contribuer au projet directement, j'ai commencé par faire des tests manuels d'intégration directement sur le logiciel. Je suivais en fait un scenario qui utilisait une grande partie des fonctionnalités disponibles de SAC. \
-Ce scénario était stocké sur un wiki interne SAP, mais il n'était pas totalement à jour à causes des modifications apportés continuellement, autant du côté UI que du côté fonctionnalités. Ma mission était donc en parallèle de mettre à jour ce scénario appelé "BAT Scénario".
+Ce scénario était stocké sur un wiki interne SAP, mais il n'était pas totalement à jour à causes des modifications apportées continuellement, autant du côté UX que du côté fonctionnalités. Ma mission était donc en parallèle de mettre à jour ce scénario appelé "BAT Scénario".
 
 Pendant ce temps, je me familiarisais aussi avec mon environnement, mes équipiers, le vocabulaire interne, l'organisation, et en grande partie aussi les outils utilisés. \
 Dans ce but, j'ai participé directement à des réunions et des interviews/présentations individuels avec plusieurs membres des équipes, des repas le midi... J'ai fait beaucoup de recherches de mon côté pour me mettre à jour et pouvoir comprendre plus facilement tout ça.
@@ -353,7 +355,7 @@ Dans ce but, j'ai participé directement à des réunions et des interviews/pré
 Ensuite quand je suis arrivé à un bon stade de compréhension global, j'ai pu commencer à pouvoir essayer de faire des tests d'intégrations automatisés, donc qui demandent des compétences en programmation et dans les outils/frameworks utilisés. \
 Ainsi j'ai refait une phase de découverte/assimilation qui a duré environ une semaine ou deux. Cette phase est particulièrement longue car il faut comprendre tout le travail qui a été fait précédemment. Ce travail représente un grand nombre de fonctions et de classes (on y reviendra) qui ont été mis en place justement pour pouvoir tester le logiciel. Pendant cette période j'ai aussi mis en place mon environnement de développement.
 
-Finalement, j'ai pu commencé à coder ces tests automatiques. Et notamment j'ai codé un test automatique pour le scénario BAT. Au delà du test automatique, j'ai pu apporter des modifications aux frameworks de test, ce qui demande des compétences et une compréhension plus poussée.
+Finalement, j'ai pu commencer à coder ces tests automatiques. Et notamment j'ai codé un test automatique pour le scénario BAT. Au delà du test automatique, j'ai pu apporter des modifications aux frameworks de test, ce qui demande des compétences et une compréhension plus poussée.
 
 ## Les Outils
 
@@ -369,28 +371,16 @@ Cela devient particulièrement intéressant quand il prend en charge la particip
 Git est donc un système de contrôle de version open-source. Il est aujourd'hui le plus populaire de ces systèmes. \
 Il est utilisé pour tous types de projets: projet open-source, projet en entreprise, projet individuel...
 
-Le principe de Git est de copier l'intégralité des fichiers d'un dossier, puis d'enregistrer une rermière version ou premier "snapshot" qui est en fait un objet qui pointe vers l'ensemble des fichiers copiés. \
-Si une modification est apportée à un fichier, alors Git prend un autre "snapshot". Ce second snapshot pointera vers les mêmes fichiers que le premier, excepté pour le fichier modifié: pour lui, il pointera vers une seconde copie de ce fichier (on remarquera que la 1ere copie est conservée en mémoire).
+Les termes importants à connaître sont:
 
-Pour être plus précis, l'utilisateur fait un certain nombres de modifications sur les fichiers, puis les ajoutes en même temps dans l'historique de Git, accompagné d'une description des changements. Cet ajout est appelé "commit". Un commit comprend donc un snapshot et un message associé. \
-On appelle "repository" la structure de donnée qui contient la suite des commits et les fichiers associés aux snapshot.
+* un **snapshot**: c'est en quelque sorte une photo de l'état actuel du projet (ses fichiers et leur contenu)
+* un **commit**: c'est une modification commentée et inventoriée du projet, qui est donc accompagnée d'un nouveau snapshot
+* un **repository** ou dépôt: la structure de donnée qui contient la suite des commits, des différents snapshots et les fichiers associés.
 
-Ainsi Git conserve un historique de toutes les commits de manière successive, et à tout moment on peut retrouver le dossier dans le même état que lors du commit de notre choix.
+Les repository sont utilisés localement mais peuvent être partagés (ce sont alors des repository à distance) pour des projets de groupes. Chacun peut alors contribuer au projet qui est stocké sur le repository à distance.
 
-Git fonctionne d'abord localement: le repository est stocké sur la machine local. Il est possible de partager ce repository sur un serveur: on a alors un remote repository. D'autres utilisateurs peuvent alors "cloner" ce repository et l'utiliser à leur tour localement.
-
-Quand ce deuxième utilisateur veut pousser ("push") ses changements sur le remote repository, il doit d'abord s'assurer qu'il n'est pas en retard par rapport à ce repository. \
-S'il l'est, il doit alors tirer ("pull") les changements, les intégrer dans son repository local et enfin il peut pousser ses changements.
-
-On peut noter comme fonctionnalités phares la possibilité de faire des branches. Une branche a un commit d'origine puis a ses propres commits. \
-Ainsi la première branche est celle crée à l'initialisation du repository, communément appelée "master".
-
-A partir d'un certain commit, on peut créer une nouvelle branche, qui va dévier de l'évolution de master, généralement pour ajouter une fonctionnalité. \
-Quand on a fini de développer la fonctionnalité, on mélange ("merge") cette branche à master.
-
-Si entre temps master a évolué, il faut intégrer les changements ajoutés sur master. S'il y a un conflit (quand les modifications que la branche auxiliaire sont sur la même partie de code que celles de master), il faut le résoudre avant le mélange.
-
-Pour résumé, Git est un outil performant, open-source, robuste et sécurisé, qui facilite grandement la gestion de projets de tout types et qui assure la conservation de toutes les modifications.
+Pour résumé, Git est un outil performant, open-source, robuste et sécurisé, qui facilite grandement la gestion de projets de tout types et qui assure la conservation de toutes les modifications. \
+Pour plus de détails sur son fonctionnement, voir Annexes/Outils.
 
 ### Github
 
@@ -401,7 +391,7 @@ Il existe aussi la possibilité de créer des repository privés. C'est le cas p
 Sur Github, chaque repository comporte une page d'accueil qui est un fichier texte servant d'introduction au projet. Ce fichier est écrit dans un langage particulier permettant une customisation lors de l'affichage.
 
 Ce langage est le langage **Markdown** (extension .md). C'est en fait un langage de balisage ou "Mark-up langage" tout comme le HTML. \
-Un langage de balisage permet en fait de baliser sur du texte simple les parties particulières, comme les titres, les citations, les mots importants etc...
+Un langage de balisage permet de baliser, sur du texte simple, les parties particulières comme les titres, les citations, les mots importants etc...
 
 Pour ma part j'ai rédigé ce rapport en markdown et j'ai stocké les fichiers images, pdf, et le fichier texte sur un repository Github, ce qui me permet de retrouver des anciennes versions si besoin. \
 Et plus important encore, cela m'a permis de pouvoir éditer mon rapport aussi bien chez moi qu'au travail, sans avoir besoin de déplacer les fichiers par clé USB.
@@ -419,7 +409,7 @@ Il contient initialement plein de fonctionnalités rendant l'édition de texte f
 * il supporte la plupart des langages de programmation (coloration du texte, indentation ...)
 * il supporte l'auto complétion, la correction d'orthographe
 * il supporte la multi édition (pratique quand l'on doit changer des noms à plusieurs endroits à la fois)
-* il supporte l'utilisation de git/github et la gestion de projets
+* il supporte l'utilisation de Git/Github et la gestion de projets
 * il supporte l'utilisation de panneaux afin de pouvoir juxtaposer par exemple le texte markdown et son rendu graphique
 
 L'avantage d'Atom est de pouvoir absolument tout personnaliser: la police, les couleurs, les thèmes graphiques de l'interface, les raccourcis ...
@@ -427,7 +417,7 @@ L'avantage d'Atom est de pouvoir absolument tout personnaliser: la police, les c
 Via l'installation de packages, il est possible de rajouter n'importe quelle fonctionnalité, comme supporter la visualisation de pdf, ajouter un navigateur web intégré...
 
 Ces packages sont développés par la communauté dans un langage appelé CoffeeScript assez ressemblant au JavaScript. Il est par exemple possible de programmer ce qu'on appelle **snippet** (qui peuvent être spécifique à un langage), qui sont des fonctions que l'on utilise lors de la rédaction. \
-Par exemple, en markdown, on peut écrire "toc" et cela génère un "table of content" ou table des matières.
+Par exemple, en markdown, on peut écrire le texte "toc" et cela génère une "table of content" ou table des matières automatiquement.
 
 Après un certain temps d'adaptation, un tel éditeur de texte peut te faire gagner un temps considérable tout en réunissant plusieurs outils dans un seul. \
 L'intégration de Git et Github dans Atom est vraiment très pratique notamment pour la rédaction de mon rapport.
@@ -446,7 +436,7 @@ Il est conseillé d'utiliser ce qu'on appelle des IDEs ou "Integrated Developmen
 Un IDE est en faite un gros logiciel qui permet de développer des logiciels donc de la programmation à la construction du logiciel.
 
 Les IDE sont souvent spécialisés dans un certain langage. Par exemple Microsoft Visual Studio est spécialisé pour le C++, alors que IntelliJ est spécialisé pour le Java. \
-J'avais précedemment déjà utilisé le C++ et donc Visual Studio. J'ai du m'adapté et apprendre le Java et IntelliJ pour le stage.
+J'avais précédemment déjà utilisé le C++ et donc Visual Studio. J'ai du m'adapter et apprendre le Java et IntelliJ pour le stage.
 
 Il faut savoir que le langage utilisé n'a pas une si grande importance, tant que les principes de programmations sont compris. De plus le Java et le C++ sont plutôt proches dans leur style: \
 Ils sont tous les orientés objet, ce qui signifie que l'on manipule quasiment que des objets (structure de donnée) définies dans des classes dans les programmes, avec quelques grands principes comme l'héritage, le polymorphisme ...
@@ -526,13 +516,16 @@ Le logiciel est délivré sous forme de wave (par vague).
 
 Tout d'abord, les différentes équipes travaillant sur SAC possèdent une version du logiciel qui leur est propre et où ils implémentent leurs modifications: l'espace **DEV** qui est donc très instable.
 
-Ensuite, deux fois par jours, toutes les modifications sont mélangés dans un espace commun appelé **MASTER**, qui est alors plus stable que DEV.
+Ensuite, deux fois par jours, toutes les modifications des équipes sont mélangées dans un espace commun appelé **MASTER**.
 
 Les développeurs travaillent sur Dev donc sur Master toute la durée d'un run (2 semaines).
 
-A chaque fin de run, l'espace MASTER est déployé dans l'espace **STABI**. Cet espace est censé être sans bugs mais il est encore tester pendant deux semaines.
+A chaque fin de run, l'espace MASTER est déployé dans l'espace **STABI**. Cet espace est censé être stable mais il est encore testé pendant deux semaines.
 
-En fin à chaque fin de sprint, l'espace STABI est déployé dans l'espace **REL**(ease) qui est en fait le produit (pour l'instant en bêta) proposé aux clients.
+En fin à chaque fin de sprint, l'espace STABI est déployé dans l'espace **REL**(ease) qui est en fait le produit considéré comme terminé. \
+Par sécurité il est encore testé par des clients bêta pendant 2 semaines.
+
+Ainsi une wave dure 6 semaines, du développement à la sortie ("release").
 
 #### Intégration en continue
 
@@ -573,6 +566,33 @@ Les applications développés avec des micro-services sont les plus adaptées po
 Cela permet alors de faire des mises à jour sans "downtime" (sans que l'application soient inutilisable), de déployer des applications avec très peu de risque d'être "down", de multiplier ou réduire le nombre d'applications disponibles suivant les besoins...
 
 ![Les différentes étapes pour les déploiements](DevOps_Continuous.png)
+
+## Outils
+
+### Git
+
+Le principe de Git est de copier l'intégralité des fichiers d'un dossier, puis d'enregistrer une rermière version ou premier "snapshot" qui est en fait un objet qui pointe vers l'ensemble des fichiers copiés. \
+Si une modification est apportée à un fichier, alors Git prend un autre "snapshot". Ce second snapshot pointera vers les mêmes fichiers que le premier, excepté pour le fichier modifié: pour lui, il pointera vers une seconde copie de ce fichier (on remarquera que la 1ere copie est conservée en mémoire).
+
+Pour être plus précis, l'utilisateur fait un certain nombres de modifications sur les fichiers, puis les ajoutes en même temps dans l'historique de Git, accompagné d'une description des changements. Cet ajout est appelé "commit". Un commit comprend donc un snapshot et un message associé. \
+On appelle "repository" la structure de donnée qui contient la suite des commits et les fichiers associés aux snapshot.
+
+Ainsi Git conserve un historique de toutes les commits de manière successive, et à tout moment on peut retrouver le dossier dans le même état que lors du commit de notre choix.
+
+Git fonctionne d'abord localement: le repository est stocké sur la machine local. Il est possible de partager ce repository sur un serveur: on a alors un remote repository. D'autres utilisateurs peuvent alors "cloner" ce repository et l'utiliser à leur tour localement.
+
+Quand ce deuxième utilisateur veut pousser ("push") ses changements sur le remote repository, il doit d'abord s'assurer qu'il n'est pas en retard par rapport à ce repository. \
+S'il l'est, il doit alors tirer ("pull") les changements, les intégrer dans son repository local et enfin il peut pousser ses changements.
+
+On peut noter comme fonctionnalités phares la possibilité de faire des branches. Une branche a un commit d'origine puis a ses propres commits. \
+Ainsi la première branche est celle crée à l'initialisation du repository, communément appelée "master".
+
+A partir d'un certain commit, on peut créer une nouvelle branche, qui va dévier de l'évolution de master, généralement pour ajouter une fonctionnalité. \
+Quand on a fini de développer la fonctionnalité, on mélange ("merge") cette branche à master.
+
+Si entre temps master a évolué, il faut intégrer les changements ajoutés sur master. S'il y a un conflit (quand les modifications que la branche auxiliaire sont sur la même partie de code que celles de master), il faut le résoudre avant le mélange.
+
+Il existe aussi des fonctions par exemple de **staging area**, de **rebase**, d'**amend** ... plus complexes.
 
 ### HANA
 
