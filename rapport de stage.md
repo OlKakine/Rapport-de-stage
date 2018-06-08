@@ -536,7 +536,7 @@ Finalement, j'ai pu finir de coder le test. A noter que je me suis inspiré d'an
 Le but final étant que ce test soit automatiquement utilisé lors de l'intégration continue pour valider le bon fonctionnement de la partie ppro-core. De plus il faut que les changements que j'ai apporté localement au framework de test spécifique à SAC soient partagés avec le reste des testeurs (donc via Github). Pour ce faire, il faut qu'un autre testeur valide tout cela. \
 Cela sera fait la dernière semaine et va conclure la mission.
 
-### Missions annexes
+### Missions et annexes
 
 J'avais aussi pour rôle d'aider mon maître de stage dans son travail de QA Lead (responsable qualité) sur la partie ppro-core.
 
@@ -548,12 +548,7 @@ Ainsi j'avais pour missions de faire toute une batterie de tests manuels sur le 
 
 [Exemple de bug à valider](bug_to_validate.doc)
 
-
-
-# code
-~~~~
-pandoc "rapport de stage.md" -o rapport.pdf -V fontsize=12pt -V linestretch=1 -V linkcolor=black --number-sections --table-of-contents -V documentclass=scrreprt
-~~~~
+Pour la gestion des bugs, SAP utilise l'outil JIRA qui permet de centraliser le suivi des bugs et des tâches (liées aux bugs ou non).
 
 # Annexes
 
@@ -611,7 +606,7 @@ La pratique DevOps étant encore en cours d'implémentation pour le département
 
 #### Life Cycle Management (LCM)
 
-Le logiciel est délivré sous forme de wave (par vague).
+On appelle LCM l'organisation des cycles menant à délivrer un logiciel. SAC est délivré sous forme de wave (par vague).
 
 Tout d'abord, les différentes équipes travaillant sur SAC possèdent une version du logiciel qui leur est propre et où ils implémentent leurs modifications: l'espace **DEV** qui est donc très instable.
 
@@ -693,7 +688,7 @@ Si entre temps master a évolué, il faut intégrer les changements ajoutés sur
 
 Il existe aussi des fonctions par exemple de **staging area**, de **rebase**, d'**amend** ... plus complexes.
 
-### Debugging
+### Debugging dans un IDE
 
 On appelle debugging l'ensemble des techniques permettant de localiser les bugs lors de l'exécution d'un programme. Cela est facilité lors de l'utilisation d'un IDE.
 
@@ -704,7 +699,40 @@ Les outils fournis sont alors:
 
 ![Exemple de point d'arrêt sur IntelliJ](debugging.png)
 
+### Monsoon: l'infrastructure SAP
+
+On rappelle qu'ici l'infrastructure correspond aux ressources qui peuvent être mises à disposition pour les développeurs ou testeurs.
+
+Par ressources on entend majoritairement les VMs ou machines virtuelles. Une VM se comporte comme un simple ordinateur, utilisant sa propre mémoire vive, son propre système d'exploitation, ses propres processeurs... \
+Cependant il est possible à l'aide d'un superviseur, comme Hypervisor, de créer des machines virtuelles utilisant des ressources "partagées".
+
+Classiquement, un ordinateur possède du **hardware** (ou matériel, comme un disque dur etc...) qui sont liés entre eux et qui lui est dédié. \
+Une VM quant à elle simule un ordinateur en isolant et s'appropriant des parties de hardware.
+
+Ainsi il est possible à partir d'un grand nombre de disque durs, processeurs, mémoires RAM de créer plusieurs VMs qui utilisent les ressources qu'elles veulent (deux VMs peuvent utiliser du stockage sur le même disque dur).
+
+Une VM ainsi créée se comporte exactement comme un ordinateur, avec notamment son propre système d'exploitation.
+
+SAP utilise aujourd'hui Monsoon 2.0 pour gérer la création et l'affectations des VMs aux développeurs. \
+Par un simple click, un développeur peut se procure une VM sous Linux, utilisant 120gb de RAM, 10 processeurs et 10To de stockage.
+
+De plus, avec ce qu'on appelle des **ready-made** ou prêt à l'emploi, initialiser ses VMs avec l'environnement que l'on veut (OS, logiciels ...).
+
+C'est le rôle de l'INFRA Owner de fournir ces ready-mades.
+
+SAP a la volonté de passer sur Monsoon 3.0 aussi appelé Converged Cloud. Le but est d'avoir un seul système qui permet de fournir des VMs, des **baremetal** (directement du hardware, sans logiciels/**software** dessus).
+
+Des alternatives de plus en plus populaires comme Docker et Kubernetes sont en voie d'exploitation par SAP.
+
 ### HANA
+
+Le produit SAP HANA peut être séparé en deux.
+
+D'un côté le produit HANA Database ou base de données HANA qui utilise une technologie révolutionnaire permettant un accès très rapide aux données qui peuvent être de n'importe quelle origine. Cela peut être utilisé aussi bien on premise que sur le Cloud.
+
+De l'autre, le produit HANA Plateform qui permet d'accéder aux données en temps réel et qui permet d'exécuter des programmes directement sur la base de données.
+
+Derrière le logiciel SAC, on utilise la technologie HANA: cela permet de faire tourner l'algorithme prédictif directement sur un ensemble de données (**dataset**), ce qui résulte ensuite en la création d'un modèle.
 
 ## Sources
 [Progiciel](https://fr.wikipedia.org/wiki/Progiciel)
@@ -717,7 +745,7 @@ Les outils fournis sont alors:
 
 [SAP products](https://www.sap.com/france/products.html)
 
-[Comparative of ERP leaders](Clash-of-the-Titans-2017.pdf)
+[(PDF) Comparative of ERP leaders](Clash-of-the-Titans-2017.pdf)
 
 [Legacy ERP System](https://ercerp.wordpress.com/why-your-legacy-erp-system-needs-replacement/)
 
@@ -746,3 +774,5 @@ Les outils fournis sont alors:
 [Les différents types de tests](http://www.test-recette.fr/)
 
 [Integration vs Delivery vs Deployment](https://www.atlassian.com/continuous-delivery/ci-vs-ci-vs-cd)
+
+[(PDF) L'infrastructure SAP: Monsoon et Converged Cloud](infrastructure_sap.pdf)
