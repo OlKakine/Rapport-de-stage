@@ -18,7 +18,7 @@ SAP SE ou seulement SAP (SE signifiant "Societas Europaea" en latin) est une ent
 
 Selon la liste Forbes de 2017 "The World's Biggest Public Companies", SAP est le premier producteur européen de logiciels et le troisième mondial derrière Microsoft (1) et Oracle (2). SAP est donc en concurrence directe avec Oracle et Microsoft, notamment sur son produit phare qui est le **progiciel de gestion intégrée**: SAP ERP. (voir Annexes/Divers)
 
-![Forbes 2017 list of "The World's Biggest Public Companies"](Liste_Forbes_2017.png)
+![Forbes 2017 list of "The World's Biggest Public Companies"](Liste_Forbes_2017.png){ height=200px }
 
 Pour synthétiser, un logiciel ERP est un moyen d'intégrer les données de tous les départements d'une entreprise en un seul système accessible par tous, afin de faciliter les échanges d'informations. Il n'a donc pas de fonction d'analyse.
 
@@ -112,7 +112,7 @@ On peut compter comme actions phare:
 * SAP promet de planter 5 millions d'arbres avant 2025
 * SAP vise à avoir un parc véhicule 100% électriques pour réduire l'empreinte carbone
 
-![17 United Nations Sustainable Development Goals](UN_sustainabily_goals.png)
+![17 United Nations Sustainable Development Goals](UN_sustainabily_goals.png){ height=250px }
 
 SAP offre aussi à ses employés des conditions de travail très accommodantes, avec notamment la possibilité de choisir ses horaires de travail, des distributeurs gratuits de boisson mis à disposition dans plusieurs endroits consacrés à la détente, la possibilité de faire du télétravail ...
 
@@ -132,7 +132,7 @@ J'ai eu l'occasion d'observer l'intégration dans SAP d'une start-up nommée Rec
 
 Cela a été possible notamment grâce à une collaboration entre le CEO Bill McDermott et le président M.Macron et parce que le marché français est le plus dynamique aujourd'hui pour ce qui est du Cloud.
 
-![Intégration par SAP de Recast](recast.ai.png)
+![Intégration par SAP de Recast](recast.ai.png){ height=100px }
 
 La start-up Recast vient ajouter aux technologies intelligentes de SAP ce qu'on appelle le "Natural langage Processing". C'est en fait l'ensemble des technologies qui permettent aux machines de pouvoir manipuler de manière intelligente le langage humain. \
 L'approche actuelle est mathématique et consiste considérer les mots ou plutôt leur sémantique comme des vecteurs dans un espace de grande dimension. Ainsi (grossièrement) on peut donner une intention à une phrase en additionnant les vecteurs. \
@@ -157,7 +157,7 @@ On peut distinguer plusieurs types de services (ce nombre de type augmente avec 
 
 * IaaS ou Infrastructure aaS: cela permet d'accéder à du "hardware" (serveurs, disque durs, processeurs ...) directement via Internet. Ces ressources sont accessibles à la demande et ne nécessitent aucune installation ou coût de maintenance au client.
 
-![Cloud Computing Types and On Premise comparison](iaas-paas-saas-comparison-1024x759.jpg)
+![Cloud Computing Types and On Premise comparison](iaas-paas-saas-comparison-1024x759.jpg){ height=250px }
 
 ### Les nouveaux besoins
 
@@ -531,7 +531,7 @@ Cependant, certaines classes et/ou leur fonctionnalités associées n'étaient p
 
 Finalement, j'ai pu finir de coder le test. A noter que je me suis inspiré d'anciens tests existants mais qui n'étaient pas adaptés pour ce scénario, pour faciliter la compréhension et la rédaction du test.
 
-![Partie du code de test que j'ai créé](bat_scenario_selenium.png)
+![Partie du code de test que j'ai créé](bat_scenario_selenium.PNG)
 
 Le but final étant que ce test soit automatiquement utilisé lors de l'intégration continue pour valider le bon fonctionnement de la partie ppro-core. De plus il faut que les changements que j'ai apporté localement au framework de test spécifique à SAC soient partagés avec le reste des testeurs (donc via Github). Pour ce faire, il faut qu'un autre testeur valide tout cela. \
 Cela sera fait la dernière semaine et va conclure la mission.
