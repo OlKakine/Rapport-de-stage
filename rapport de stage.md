@@ -1,10 +1,3 @@
----
-header-includes:
-  -  hypersetup{colorlinks=false,
-            allbordercolors={0 0 0},
-            pdfborderstyle={/S/U/W 1}}
----
-
 # Introduction
 
 ## Avant-propos
