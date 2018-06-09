@@ -1,9 +1,67 @@
----
-header-includes:
-  -  hypersetup{colorlinks=false,
-            allbordercolors={0 0 0},
-            pdfborderstyle={/S/U/W 1}}
----
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Introduction](#introduction)
+	- [Avant-propos](#avant-propos)
+	- [Informations complémentaires](#informations-complmentaires)
+	- [Résumé](#rsum)
+	- [Remerciements](#remerciements)
+- [Cadre du stage](#cadre-du-stage)
+	- [Présentation de l'entreprise](#prsentation-de-lentreprise)
+		- [Généralités](#gnralits)
+		- [Les Chiffres](#les-chiffres)
+		- [Les Produits](#les-produits)
+		- [Philosophies et stratégies](#philosophies-et-stratgies)
+			- [Stratégies](#stratgies)
+			- [Environnement](#environnement)
+			- [One Team OneSAP](#one-team-onesap)
+			- [#ChooseFrance](#choosefrance)
+	- [L'organisation](#lorganisation)
+		- [Le Cloud Computing](#le-cloud-computing)
+		- [Les nouveaux besoins](#les-nouveaux-besoins)
+		- [La philosophie Agile](#la-philosophie-agile)
+		- [Scrum: une méthode Agile](#scrum-une-mthode-agile)
+		- [DevOps: une extension Agile](#devops-une-extension-agile)
+- [Mission, outils et résultats](#mission-outils-et-rsultats)
+	- [Ma mission](#ma-mission)
+		- [Remise en contexte](#remise-en-contexte)
+		- [Mes équipes](#mes-quipes)
+			- [L'équipe développeur](#lquipe-dveloppeur)
+			- [L'équipe transversale](#lquipe-transversale)
+		- [La Qualité](#la-qualit)
+		- [Objectif](#objectif)
+		- [Déroulement](#droulement)
+	- [Les Outils](#les-outils)
+		- [Git: système de contrôle de version](#git-systme-de-contrle-de-version)
+		- [Github](#github)
+		- [Atom: éditeur de texte personalisable](#atom-diteur-de-texte-personalisable)
+		- [IntelliJ: IDE pour Java](#intellij-ide-pour-java)
+		- [Jenkins ou l'automatisation](#jenkins-ou-lautomatisation)
+		- [Maven: projet et build Java](#maven-projet-et-build-java)
+		- [JUnit et Selenium: frameworks de tests](#junit-et-selenium-frameworks-de-tests)
+	- [Résultats](#rsultats)
+		- [Mission principale](#mission-principale)
+		- [Missions et annexes](#missions-et-annexes)
+- [Annexes](#annexes)
+	- [Divers](#divers)
+		- [ERP](#erp)
+		- [L'approche en V](#lapproche-en-v)
+		- [Le Manifeste Agile](#le-manifeste-agile)
+		- [L'infrastructure](#linfrastructure)
+		- [Livraison et déploiement de l'application](#livraison-et-dploiement-de-lapplication)
+			- [Life Cycle Management (LCM)](#life-cycle-management-lcm)
+			- [Intégration en continu](#intgration-en-continu)
+			- [Livraison en continu](#livraison-en-continu)
+			- [Micro-services et déploiement en continu](#micro-services-et-dploiement-en-continu)
+		- [Build en Java](#build-en-java)
+	- [Outils](#outils)
+		- [Git](#git)
+		- [IDE](#ide)
+		- [Debugging dans un IDE](#debugging-dans-un-ide)
+		- [Monsoon: l'infrastructure SAP](#monsoon-linfrastructure-sap)
+		- [HANA](#hana)
+	- [Sources](#sources)
+
+<!-- /TOC -->
 
 # Introduction
 
