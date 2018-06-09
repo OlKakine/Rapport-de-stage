@@ -1,9 +1,6 @@
-% Rapport de stage: Assistance à la mise en oeuvre d'une stratégie de tests automatisés
-% Olivier CHECCHIN
-% Stage chez SAP, du 30/04/18 au 15/06/18
 ---
 header-includes:
-  - \hypersetup{colorlinks=false,
+  -  hypersetup{colorlinks=false,
             allbordercolors={0 0 0},
             pdfborderstyle={/S/U/W 1}}
 ---
@@ -12,15 +9,15 @@ header-includes:
 
 ## Avant-propos
 
-Ce rapport de stage n'a pas été rédigé de manière optimisée pour être publié en format PDF. \
+Ce rapport de stage n'a pas été rédigé de manière optimisée pour être publié en format PDF.  
 En effet, il a été écrit en Markdown: le langage optimisé pour être utilisé par Github dont on parlera plus tard. Le but étant de montrer un exemple pratique d'utilisation d'un outil informatique très populaire.
 
 J'ai donc stocké mon rapport de stage et les fichiers associés dans un dépôt Github pour pouvoir travailler dessus.
 
 Néanmoins, pour des raisons de confidentialité, il n'est pas possible d'accéder à ce dépôt qui est pour l'instant privé. Il sera disponible à partir du 16 Juin en suivant ce [lien](https://github.com/OlKakine/Rapport-de-stage).
 
-La lecture sera alors beaucoup plus agréable, mais le contenu sera le même que sous le format PDF. \
-De plus les images et la mauvaise conversion vers le format PDF sont responsables de la longueur (plus de 20 pages) du rapport. 
+La lecture sera alors beaucoup plus agréable, mais le contenu sera le même que sous le format PDF.  
+De plus les images et la mauvaise conversion vers le format PDF sont responsables de la longueur (plus de 20 pages) du rapport.
 
 ## Informations complémentaires
 
@@ -30,11 +27,11 @@ Mon tuteur enseignant est Mme.ESCOLIN qui enseigne la Culture Générale à La P
 
 Mon maître de stage est Mme.ELGHARIB qui travaille chez SAP en tant que QA Lead.
 
-![Les différents logos](logos.png){ height=100px}
+![Les différents logos](logos.png)
 
 ## Résumé
 
-Pendant mon stage, j'ai travaillé sur une partie d'un logiciel SAP en cours de développement dans le **Cloud**. \
+Pendant mon stage, j'ai travaillé sur une partie d'un logiciel SAP en cours de développement dans le **Cloud**.  
 Cependant, je n'ai pas participé directement au développement de ce logiciel mais j'ai aidé à le faciliter grâce à une activité de support: les **tests automatiques**.
 
 Dans le cadre de nouvelles méthodes et philosophies de travail, ces tests ainsi que d'autres tâches automatiques deviennent primordiales dans la conception des logiciels.
@@ -59,10 +56,10 @@ Je pense en premier lieu à mon manager David qui m'a fait confiance, qui m'a in
 
 Vient ensuite Sophie, mon maître de stage, qui m'a consacré beaucoup de temps et de ressources (notamment ce beau poste de travail). J'ai pu évoluer rapidement dans mon travail grâce à toi et tes nombreux conseils. Je retiens particulièrement les repas partagés, la bonne humeur et les blagues (ainsi que mes victoires sur Duel Quizz).
 
-Avec Sopie est venu la rencontre avec Dominik, l'autre stagiaire, avec qui j'ai passé beaucoup de temps. On s'est rapproché rapidement du fait de la proximité d'âge notamment. On a vécu beaucoup de moments marquants, commme la défaite cuisante au babyfoot, le café-vanille, la victoire à la pétanque, la soirée Spring Break... \
+Avec Sopie est venu la rencontre avec Dominik, l'autre stagiaire, avec qui j'ai passé beaucoup de temps. On s'est rapproché rapidement du fait de la proximité d'âge notamment. On a vécu beaucoup de moments marquants, commme la défaite cuisante au babyfoot, le café-vanille, la victoire à la pétanque, la soirée Spring Break...  
 Merci pour tous ces moments d'échanges et de convivialité!
 
-Je tenais à remercier toutes mes équipiers qui m'ont accueilli sans me mettre à distance, et qui au contraire se sont intéressés à moi et m'ont intégrés directement dans l'équipe. Votre cohésion et complicité m'ont permis d'être à l'aise dans une très bonne ambiance de travail. \
+Je tenais à remercier toutes mes équipiers qui m'ont accueilli sans me mettre à distance, et qui au contraire se sont intéressés à moi et m'ont intégrés directement dans l'équipe. Votre cohésion et complicité m'ont permis d'être à l'aise dans une très bonne ambiance de travail.  
 Plus particulièrement je voulais remercier Christian, Dominique, Rovland, Magali, Guillaume, Minh, David et Jacques pour m'avoir fournis des aides précieurses voire des formations qui ont permis une bien meilleure compréhension des outils et des métiers.
 
 Pour finir, je remercie la direction de SAP ainsi que le personnel (à l'accueil, les cuisiniers, les techniciens de surface ...) pour m'avoir permis de faire mon stage dans un environnement de vie et de travail plus qu'agréable.
@@ -77,7 +74,7 @@ SAP SE ou seulement SAP (SE signifiant "Societas Europaea" en latin) est une ent
 
 Selon la liste Forbes de 2017 "The World's Biggest Public Companies", SAP est le premier producteur européen de logiciels et le troisième mondial derrière Microsoft (1) et Oracle (2). SAP est donc en concurrence directe avec Oracle et Microsoft, notamment sur son produit phare qui est le **progiciel de gestion intégrée**: SAP [ERP](#erp).
 
-![Forbes 2017 list of "The World's Biggest Public Companies"](Liste_Forbes_2017.png){ height=200px }
+![Forbes 2017 list of "The World's Biggest Public Companies"](Liste_Forbes_2017.png)}
 
 Pour synthétiser, un logiciel ERP est un moyen d'intégrer les données de tous les départements d'une entreprise en un seul système accessible par tous, afin de faciliter les échanges d'informations. Il n'a donc pas de fonction d'analyse.
 
@@ -86,11 +83,11 @@ Pour synthétiser, un logiciel ERP est un moyen d'intégrer les données de tous
 ![SAP Facts and Information](SAP_facts_and_information.png)
 
 Les produits SAP sont utilisés par de nombreuses entreprises dans le monde entier.
-Anciennement, SAP était perçu comme un produit que seul les grandes entreprises avaient les moyens de s'offrir. Or aujourd'hui, la plupart des clients sont des PMEs (environ 80%), cela vient du fait que SAP a adapté son offre à différents publics. \
+Anciennement, SAP était perçu comme un produit que seul les grandes entreprises avaient les moyens de s'offrir. Or aujourd'hui, la plupart des clients sont des PMEs (environ 80%), cela vient du fait que SAP a adapté son offre à différents publics.  
 Ce n'est pas pour autant que les grandes sociétés ne l'utilisent plus. En effet, parmi les clients, on trouve par exemple 98% des marques possédant la valeur la plus élevée.
 On peut constater que les revenus totaux IFRS de SAP, qui étaient de €23.76 milliards, sont en croissance (+9% au premier semestre de 2018). Et cela vient en grande partie de l'explosion de l'activité liée au Cloud (avec un taux de croissance de 31% pour la même période).
 
-SAP possède aussi plus de 100 centres d'innovations et de développement. Ces centres sont principalement situés en Allemagne, en France, en Irlande et aux USA. \
+SAP possède aussi plus de 100 centres d'innovations et de développement. Ces centres sont principalement situés en Allemagne, en France, en Irlande et aux USA.  
 Pour ce qui est de la France, le siège se situe au 35 rue d'Alsace dans la ville de Levallois-Perret. C'est donc dans cette tour de 20 étages que j'ai effectué mon stage. On peut trouver dans cette tour:
 
 * des départements liés aux différents produits
@@ -108,7 +105,7 @@ Les produits SAP sont totalement intégrés, ce qui signifie qu'ils agissent com
 
 On réduit souvent SAP au produit ERP et même à ce qu'on appelle "legacy ERP" ou l'[ancien ERP](#erp).
 
-SAP a aujourd'hui pour but de changer cette image et a pour stratégie d'investir majoritairement dans le **Cloud** et les nouvelles technologies, en particulier ce qui touche aux analyses prédictives à l'aide de **Machine Learning**. \
+SAP a aujourd'hui pour but de changer cette image et a pour stratégie d'investir majoritairement dans le **Cloud** et les nouvelles technologies, en particulier ce qui touche aux analyses prédictives à l'aide de **Machine Learning**.  
 Ainsi maintenant, SAP propose un large panel de produits dans plusieurs catégories:
 
 * l'ERP (S/4HANA Cloud)
@@ -156,14 +153,14 @@ Les points forts de SAP sont la qualité de ses produits et le fait qu'ils soien
 
 #### Environnement
 
-SAP consacre une place importante au développement durable et à l'écologie en général. \
+SAP consacre une place importante au développement durable et à l'écologie en général.  
 Un premier exemple est celui du la Tour SAP. Cette tour possède plusieurs certifications garantissant un impact environemental limité. On peut compter comme initiatives la mise en place de bornes de tri pour les déchets, la mise à disposition de gourdes et mugs pour limiter la consommation de plastique ...
 
 De manière plus générale, voici un autre slogan de SAP:
 
 > "Help the world run better and improve people's lives."
 
-En 2017, SAP a reçu plusieurs récompenses dans les classements des entreprises les plus propres (Dow Jones Sustainabilty Indices, Oekom ranking ...). \
+En 2017, SAP a reçu plusieurs récompenses dans les classements des entreprises les plus propres (Dow Jones Sustainabilty Indices, Oekom ranking ...).  
 On peut compter comme actions phare:
 
 * leur infrastructure Cloud est alimentée à 100% par des énergies renouvelables
@@ -171,12 +168,12 @@ On peut compter comme actions phare:
 * SAP promet de planter 5 millions d'arbres avant 2025
 * SAP vise à avoir un parc véhicule 100% électriques pour réduire l'empreinte carbone
 
-![17 United Nations Sustainable Development Goals](UN_sustainabily_goals.png){ height=250px }
+![17 United Nations Sustainable Development Goals](UN_sustainabily_goals.png)
 
 SAP offre aussi à ses employés des conditions de travail très accommodantes, avec notamment la possibilité de choisir ses horaires de travail, des distributeurs gratuits de boisson mis à disposition dans plusieurs endroits consacrés à la détente, la possibilité de faire du télétravail ...
 
-SAP permet à ses employés d'organiser des *Team Buildings* pendant les heures de travail (il peut s'agir de pôts, de journées d'activités ...) afin de consolider l'esprit d'équipe et la communication. \
-J'y ai moi-même participé, avec notamment des conversations à but constructifs où chacun est amené à partager sa vision d'un monde idéal, ses motivations, et donc des points à améliorer notamment au travail. \
+SAP permet à ses employés d'organiser des *Team Buildings* pendant les heures de travail (il peut s'agir de pôts, de journées d'activités ...) afin de consolider l'esprit d'équipe et la communication.  
+J'y ai moi-même participé, avec notamment des conversations à but constructifs où chacun est amené à partager sa vision d'un monde idéal, ses motivations, et donc des points à améliorer notamment au travail.  
 On peut aussi remarquer la présence de coachs pouvant aider les employés à garder une hygiène de vie saine et à réaliser leurs objectifs.
 
 #### One Team OneSAP
@@ -191,15 +188,15 @@ J'ai eu l'occasion d'observer l'intégration dans SAP d'une start-up nommée Rec
 
 Cela a été possible notamment grâce à une collaboration entre le CEO Bill McDermott et le président M.Macron et parce que le marché français est le plus dynamique aujourd'hui pour ce qui est du Cloud.
 
-![Intégration par SAP de Recast](recast.ai.png){ height=100px }
+![Intégration par SAP de Recast](recast.ai.png)
 
-La start-up Recast vient ajouter aux technologies intelligentes de SAP ce qu'on appelle le *Natural langage Processing*. C'est en fait l'ensemble des technologies qui permettent aux machines de pouvoir manipuler de manière intelligente le langage humain. \
-L'approche actuelle est mathématique et consiste considérer les mots ou plutôt leur sémantique comme des vecteurs dans un espace de grande dimension. Ainsi (grossièrement) on peut donner une intention à une phrase en additionnant les vecteurs. \
+La start-up Recast vient ajouter aux technologies intelligentes de SAP ce qu'on appelle le *Natural langage Processing*. C'est en fait l'ensemble des technologies qui permettent aux machines de pouvoir manipuler de manière intelligente le langage humain.  
+L'approche actuelle est mathématique et consiste considérer les mots ou plutôt leur sémantique comme des vecteurs dans un espace de grande dimension. Ainsi (grossièrement) on peut donner une intention à une phrase en additionnant les vecteurs.  
 Le produit final proposé par Recast est un *chatbot* intelligent, qui m'a été présenté ainsi qu'à d'autres employés de SAP lors d'une session pratique *Hands-on*.
 
 #### #ChooseFrance
 
-Comme dit précédemment, SAP à la volonté d'investir en France, car le Cloud est en plein essor et il y a une collaboration importante avec le président. \
+Comme dit précédemment, SAP à la volonté d'investir en France, car le Cloud est en plein essor et il y a une collaboration importante avec le président.  
 SAP était aussi l'entreprise phare de l'évènement Viva Tech (du 24 au 26 Mai à Paris ) qui réunit plein d'entreprises et start-up liées aux nouvelles technologies.
 
 ## L'organisation
@@ -208,7 +205,7 @@ Nous allons voir que la migration vers le Cloud et que les besoins de rapidité 
 
 ### Le Cloud Computing
 
-On appelle Cloud Computing l'ensemble des services liés aux ordinateurs pouvant être délivrés à distance (souvent par le biais d'Internet). Ces services peuvent être de la puissance de calcul, du contenu web (sites), de l'espace de stockage ... \
+On appelle Cloud Computing l'ensemble des services liés aux ordinateurs pouvant être délivrés à distance (souvent par le biais d'Internet). Ces services peuvent être de la puissance de calcul, du contenu web (sites), de l'espace de stockage ...  
 On peut distinguer un grand nombre de types de services (ce nombre augmente avec les nouvelles technologies):
 
 * SaaS ou *Software as a Service*: c'est la possibilité d'utiliser un logiciel non pas directement sur notre machine (*On Premise*) mais sur le Cloud via un site Internet.
@@ -217,7 +214,7 @@ On peut distinguer un grand nombre de types de services (ce nombre augmente avec
 
 * IaaS ou *Infrastructure aaS*: cela permet d'accéder à du *hardware* (serveurs, disque durs, processeurs ...) directement via Internet. Ces ressources sont accessibles à la demande et ne nécessitent aucune installation ou coût de maintenance au client.
 
-![Cloud Computing Types and On Premise comparison](iaas-paas-saas-comparison-1024x759.jpg){ height=250px }
+![Cloud Computing Types and On Premise comparison](iaas-paas-saas-comparison-1024x759.jpg)
 
 ### Les nouveaux besoins
 
@@ -227,7 +224,7 @@ Avec la migration vers le Cloud, on comprend bien que des nouveaux besoins sont 
 * il faut pouvoir s'adapter rapidement au retours ou *feedback* des utilisateurs
 * la notion de *scalability* ou évolutivité est très importante: le nombre de clients ou la taille des données ne doit pas être un problème, cela passe par des processus automatiques
 
-Tout particulièrement pour les projets informatiques (sans prendre en compte la dimension Cloud), les anciennes approches de gestion de projets sont inefficaces, coûteuses et prônes à l'échec. \
+Tout particulièrement pour les projets informatiques (sans prendre en compte la dimension Cloud), les anciennes approches de gestion de projets sont inefficaces, coûteuses et prônes à l'échec.  
 La plus répandue étant l'approche prédictive et séquentielle de type [cycle en V](#lapproche-en-v) ou "waterfall" (en cascade).
 
 Aujourd'hui les besoins des clients évoluent constamment, car souvent le besoin est mal exprimé au départ. De plus ils veulent être à la pointe de la technologie et non pas attendre une année avant de se voir délivrer une nouvelle fonctionnalité.
@@ -236,10 +233,10 @@ Aujourd'hui les besoins des clients évoluent constamment, car souvent le besoin
 
 Les compagnies informatiques ont alors lancé une réflexion sur les nouvelles approches à avoir. De ces réflexions sont ressorties ce qu'on appelle la philosophie **Agile** qui repose sur [4 valeurs et 12 principes](#le-manifeste-agile).
 
-Il faut retenir que le type de projet conseillé est incrémental (rapidement la première version puis on ajoute des fonctionnalités). La communication est primordiale notamment de vive-voix. On doit favoriser une intégration et des tests continus ainsi que des échanges avec le client afin de fournir le produit le plus adapté... \
+Il faut retenir que le type de projet conseillé est incrémental (rapidement la première version puis on ajoute des fonctionnalités). La communication est primordiale notamment de vive-voix. On doit favoriser une intégration et des tests continus ainsi que des échanges avec le client afin de fournir le produit le plus adapté...  
 On retrouve beaucoup cette philosophie chez SAP: le système de réunion qui est intégré avec les mails, l'utilisation de Skype, les différentes réunions/présentations...
 
-Pour ce qui est de Skype, il est utilisé constamment pour contacter des personnes des autres centres SAP (donc en anglais), pour communiquer avec des personnes en télétravail ... \
+Pour ce qui est de Skype, il est utilisé constamment pour contacter des personnes des autres centres SAP (donc en anglais), pour communiquer avec des personnes en télétravail ...  
 Au niveau matériel, chaque développeur possède deux écrans, ce qui permet de faire des partages d'écran avec Skype tout en manipulant d'autres choses. Lors d'une réunion dans une salle réservée, les écrans et haut-parleurs sont directement connectés à un appel Skype créé automatiquement.
 
 Pour finir, les open-space offrent une proximité entre les personnes favorisant la communication et la bonne humeur. Il n'est pas rare que les personnes se déplacent directement pour parler avec quelqu'un de quelconques problèmes.
@@ -274,11 +271,11 @@ Ainsi lors des meetings, les tâches sont déplacées vers les colonnes de droit
 
 L'approche **DevOps** est en quelque sorte l'extension de la philosophie Agile en dehors du cadre d'une équipe de développeurs.
 
-Comme le nom l'indique, le principe de cette approche est de mélanger les rôles de Dev(eloppeur) et Op(ération)s. \
-Traditionnellement, le développement de logiciels se faisait dans un cadre dit de silo: les devs ne faisait que programmer, souvent sur leurs propres machines, des parties du logiciel. \
+Comme le nom l'indique, le principe de cette approche est de mélanger les rôles de Dev(eloppeur) et Op(ération)s.  
+Traditionnellement, le développement de logiciels se faisait dans un cadre dit de silo: les devs ne faisait que programmer, souvent sur leurs propres machines, des parties du logiciel.  
 Les Ops eux étaient chargés de la production et de la stabilité du logiciel: cela passe par l'intégration du code fournie par les devs, par la mise en place de l'architecture réseau (serveurs)... puis par la production en elle-même.
 
-Cela posait de multiples problèmes qui résultaient souvent en des délais et des coûts de production plus élevés que prévus. \
+Cela posait de multiples problèmes qui résultaient souvent en des délais et des coûts de production plus élevés que prévus.  
 On compte dans ces problèmes le fait que:
 
 * les deux équipes rejetaient toujours la faute sur l'autre
@@ -287,10 +284,10 @@ On compte dans ces problèmes le fait que:
 * les devs ne savent pas ce que font les ops et ne peuvent donc pas mettre en place des bonnes pratiques (pour les futurs tests et/ou futurs déploiement)
 * inversement les ops ne comprennent pas les problèmes auxquels sont confrontés les devs
 
-La pratique DevOps consiste donc à ce que les équipes ops et devs travaillent mains dans les mains sur la production de logiciel, de la conception à la production en passant par des étapes de tests. Cela repose beaucoup sur l'automatisation des procédures que ce soit de tests ou d'intégration de code dans le logiciel. \
+La pratique DevOps consiste donc à ce que les équipes ops et devs travaillent mains dans les mains sur la production de logiciel, de la conception à la production en passant par des étapes de tests. Cela repose beaucoup sur l'automatisation des procédures que ce soit de tests ou d'intégration de code dans le logiciel.  
 On verra quels outils permettent la mise en place de cette pratique.
 
-Cette pratique prend une autre dimension avec le Cloud: idéalement, il serait possible à chaque ajout des développeurs de l'intégrer directement dans l'application utilisée par les clients. \
+Cette pratique prend une autre dimension avec le Cloud: idéalement, il serait possible à chaque ajout des développeurs de l'intégrer directement dans l'application utilisée par les clients.  
 On parle de "Continuous Deployment" ou déploiement en continu. Ce n'est pas encore tout à fait le cas pour le produit SAC.
 
 Pour bien comprendre de quoi il s'agit, il faut comprendre comment l'application passe [du code au logiciel utilisable](#livraison-et-déploiement-de-lapplication).
@@ -322,7 +319,7 @@ Le Front-end correspond à la partie visible par l'utilisateur, ce qui correspon
 
 Le Back-end correspond à la partie "cachée" du logiciel: c'est celle qui implémente les fonctionnalités proposées à l'utilisateur via le Front-end.
 
-Mon équipe de développeur quant à elle a les deux rôles, bien que l'algorithme le plus fondamental est implémenté par une autre équipe. Cet algorithme est le noyau prédictif, qui est en cours de développement et qui permet de grâce au ML (Machine Learning) de faire des analyses prédictives sur la [base de données HANA](#hana). \
+Mon équipe de développeur quant à elle a les deux rôles, bien que l'algorithme le plus fondamental est implémenté par une autre équipe. Cet algorithme est le noyau prédictif, qui est en cours de développement et qui permet de grâce au ML (Machine Learning) de faire des analyses prédictives sur la [base de données HANA](#hana).  
 Cet algorithme provient d'une ancienne start-up rachetée par SAP: Kxen. Une bonne partie des personnes travaillant aujourd'hui autour de ce produit faisaient alors partie de Kxen.
 
 Ainsi le rôle de cette équipe et d'implémenter les échanges avec le noyau prédictif, HANA, et la UI sur toutes la partie du logiciel SAC concernant la manipulation de modèle prédictif. Pour rappel, un modèle prédictif permet à partir d'un ensemble de données de prévoir l'évolution d'une autre donnée, qui peut être par exemple si oui ou non un prospect va probablement acheter un produit SAP.
@@ -337,13 +334,13 @@ Dans les rôles de support, on compte:
 * le déploiement
 * la qualité
 
-[L'infrastructure](#linfrastructure) correspond à l'ensemble des ressources matérielles (puissance de calcul) et des outils fournis aux développeurs pour leur permettre de programmer dans les meilleurs conditions et dans des environnements uniformisés. \
+[L'infrastructure](#linfrastructure) correspond à l'ensemble des ressources matérielles (puissance de calcul) et des outils fournis aux développeurs pour leur permettre de programmer dans les meilleurs conditions et dans des environnements uniformisés.  
 On peut citer comme métier associé celui d'Infrastructure Owner responsable de la gestion/l'allocation de ces ressources. (voir Annexes/Divers et Outils)
 
 Le déploiement correspond à l'ensemble des procédures et outils utilisés pour optimiser (au niveau du temps, du traitement) les processus allant de la programmation à la publication dans le logiciel.
 On peut citer comme métier associé celui de DevOps Manager responsable d'inculquer aux équipes les bonnes pratiques de l'approche DevOps.
 
-Vient ensuite la qualité, c'est sur cette partie que mon stage portait. \
+Vient ensuite la qualité, c'est sur cette partie que mon stage portait.  
 La qualité est l'ensemble des procédures permettant de vérifier le bon fonctionnement et la pertinence (par rapport au client) du logiciel.
 On peut citer comme métier associé celui de QA Lead ou responsable qualité.
 
@@ -362,27 +359,27 @@ Il existe plusieurs type de test, qui doivent être exécutés dans un certain o
 
 Les premiers acteurs de ces tests sont les développeurs. Ils s'occupent de faire les tests unitaires et d'intégration.
 
-Les tests unitaires sont écrits par les développeurs afin de tester une unité de programme (grossièrement une petite partie de code) ou module. \
+Les tests unitaires sont écrits par les développeurs afin de tester une unité de programme (grossièrement une petite partie de code) ou module.  
 Pour tester ces modules, le reste du logiciel simulé à l'aide de ce qu'on appelle un "mock", c'est à dire qu'on imite l'extérieur en fournissant des données factices à cette partie du code afin de retrouver ou non les résultats attendus en sortie. Ces tests ne doivent en aucun cas dépendre de composants extérieurs comme des librairies.
 
 Les tests d'intégrations quant à eux vise à s'assurer que tout fonctionne lorsque l'on assemble plusieurs modules déjà testés unitairement (et leurs dépendances).
 
-A un niveau plus élevé vient ensuite les ingénieurs qualités. Ils réalisent pour leur part les tests fonctionnels et ceux de performances. \
+A un niveau plus élevé vient ensuite les ingénieurs qualités. Ils réalisent pour leur part les tests fonctionnels et ceux de performances.  
 Ces tests ont intérêt a être exécutés de manière automatique: par exemple les tests doivent être faits sur différentes plateformes, différents navigateurs web... Cependant, une partie de ces tests ne peuvent être exécutés que manuellement.
 
-Un test fonctionnel est en fait un test d'intégration "end-to-end" ou de bout-en-bout c'est à dire sur l'intégralité des fonctionnalités (ou suivant un certain scénario) du logiciel. \
+Un test fonctionnel est en fait un test d'intégration "end-to-end" ou de bout-en-bout c'est à dire sur l'intégralité des fonctionnalités (ou suivant un certain scénario) du logiciel.  
 Les tests de performances servent à s'assurer que le logiciel est assez robuste pour des nombre importants d'utilisateurs, de demandes ou d'échanges de données.
 
-Chez SAP, des sessions de tests fonctionnels non guidés sont organisés toutes les deux semaines, ce sont les tests exploratoires. On appelle ces sessions "Testa Fiesta" et des personnes de toutes les équipes (pas seulement qualité) y participent.\
+Chez SAP, des sessions de tests fonctionnels non guidés sont organisés toutes les deux semaines, ce sont les tests exploratoires. On appelle ces sessions "Testa Fiesta" et des personnes de toutes les équipes (pas seulement qualité) y participent.
 A la fin, les bugs rencontrés sont rapportés aux QA Leads.
 
-Une autre partie importante de la qualité est de s'assurer de la pertinence du produit. \
-Pour ce faire, et dans la continuité de la méthode Agile, SAP propose un système de Bêta test. Cela fonctionne de la manière suivante: \
-Des clients se portent volontaire pour utiliser le logiciel qui est en cours de développement. Lors de cette utilisation, ils testent les fonctionnalités sur des cas réels pour vérifier la fiabilité, pour s'assurer qu'il correspond à leurs besoins etc... \
+Une autre partie importante de la qualité est de s'assurer de la pertinence du produit.  
+Pour ce faire, et dans la continuité de la méthode Agile, SAP propose un système de Bêta test. Cela fonctionne de la manière suivante:  
+Des clients se portent volontaire pour utiliser le logiciel qui est en cours de développement. Lors de cette utilisation, ils testent les fonctionnalités sur des cas réels pour vérifier la fiabilité, pour s'assurer qu'il correspond à leurs besoins etc...  
 A la suite de ces tests, ils doivent communiquer les résultats à SAP. Lors de cette communication, ils rapportent les différents bug rencontrés et ils exposent un avis sur les fonctionnalités (déjà présentes ou non).
 
-Ainsi SAP sera capable de corriger les bugs, et plus important encore, SAP pourra décider de mettre en place les fonctionnalités qui présentent le plus de valeur ajoutée pour les clients et/ou modifier la manière dont les fonctionnalités existantes sont implémentées. \
-Comme expliqué précédemment, ce sera le rôle du PO (Product Owner) de décider quels modules sont à ajouter et dans quel sprint. \
+Ainsi SAP sera capable de corriger les bugs, et plus important encore, SAP pourra décider de mettre en place les fonctionnalités qui présentent le plus de valeur ajoutée pour les clients et/ou modifier la manière dont les fonctionnalités existantes sont implémentées.  
+Comme expliqué précédemment, ce sera le rôle du PO (Product Owner) de décider quels modules sont à ajouter et dans quel sprint.  
 On appelle cette méthode la co-innovation.
 
 ### Objectif
@@ -393,7 +390,7 @@ Voici le sujet de stage qui m'a été donné lors de la rédaction de la convent
 valider les développements effectués par l’organisation Advanced Analytics pour la livraison de la
 solution prédictive de SAP"
 
-On retrouve donc les notions de tests automatisés, d'analytique et de prédictif vues précédemment. \
+On retrouve donc les notions de tests automatisés, d'analytique et de prédictif vues précédemment.  
 Qu'en est-il de la notion de stratégie de tests?
 
 On appelle stratégie de test un ensemble de lignes directives qui expliquent comment les tests doivent être faits et donc quelles sont les pratiques qui doivent être mises en place pour permettre le test des développements.
@@ -404,21 +401,21 @@ Ma mission était donc d'implémenter des tests fonctionnels automatisés, pour 
 
 ### Déroulement
 
-Les deux premières semaines ont été consacrées à se familiariser avec le logiciel SAC: ce qu'il fait, comment il fait, dans quel but etc... \
-Pour ce faire et pour contribuer au projet directement, j'ai commencé par faire des tests manuels fonctionnels directement sur le logiciel. Je suivais en fait un scenario qui utilisait une grande partie des fonctionnalités disponibles de SAC. \
+Les deux premières semaines ont été consacrées à se familiariser avec le logiciel SAC: ce qu'il fait, comment il fait, dans quel but etc...  
+Pour ce faire et pour contribuer au projet directement, j'ai commencé par faire des tests manuels fonctionnels directement sur le logiciel. Je suivais en fait un scenario qui utilisait une grande partie des fonctionnalités disponibles de SAC.  
 Ce scénario était stocké sur un wiki interne SAP, mais il n'était pas totalement à jour à causes des modifications apportées continuellement, autant du côté UX que du côté fonctionnalités. Ma mission était donc en parallèle de mettre à jour ce scénario appelé "BAT Scénario". (on reviendra plus tard sur le BAT signifiant Build Acceptance Testing)
 
-Pendant ce temps, je me familiarisais aussi avec mon environnement, mes équipiers, le vocabulaire interne, l'organisation, et en grande partie aussi les outils utilisés. \
+Pendant ce temps, je me familiarisais aussi avec mon environnement, mes équipiers, le vocabulaire interne, l'organisation, et en grande partie aussi les outils utilisés.  
 Dans ce but, j'ai participé directement à des réunions et des interviews/présentations individuels avec plusieurs membres des équipes, des repas le midi... J'ai fait beaucoup de recherches de mon côté pour me mettre à jour et pouvoir comprendre plus facilement tout ça.
 
-Ensuite quand je suis arrivé à un bon stade de compréhension globale, j'ai pu commencer à pouvoir essayer de faire des tests d'intégrations automatisés, donc qui demandent des compétences en programmation et dans les outils/frameworks utilisés. \
+Ensuite quand je suis arrivé à un bon stade de compréhension globale, j'ai pu commencer à pouvoir essayer de faire des tests d'intégrations automatisés, donc qui demandent des compétences en programmation et dans les outils/frameworks utilisés.  
 Ainsi j'ai refait une phase de découverte/assimilation qui a duré environ une semaine ou deux. Cette phase est particulièrement longue car il faut comprendre tout le travail qui a été fait précédemment. Ce travail représente un grand nombre de fonctions et de classes (on y reviendra) qui ont été mis en place justement pour pouvoir tester le logiciel. Pendant cette période j'ai aussi mis en place mon environnement de développement.
 
 Finalement, j'ai pu commencer à coder ces tests automatiques. Et notamment j'ai codé un test automatique pour le scénario BAT. Au delà du test automatique, j'ai pu apporter des modifications aux frameworks de test, ce qui demande des compétences et une compréhension plus poussée.
 
 ## Les Outils
 
-Lors de ce stage, j'ai utilisé et/ou découvert une multitude d'outils liés au travail en groupe, au Cloud, et aux tests.\
+Lors de ce stage, j'ai utilisé et/ou découvert une multitude d'outils liés au travail en groupe, au Cloud, et aux tests.
 La plupart de ces outils sont open-source et/ou développés par SAP.
 
 ### Git: système de contrôle de version
@@ -427,7 +424,7 @@ Un système de contrôle de version est un outil permettant d'apporter des modif
 
 Cela devient particulièrement intéressant quand il prend en charge la participation collaborative sur un projet. Il fournit alors des fonctionnalités permettant à chacun d'apporter des modifications en même temps.
 
-Git est donc un système de contrôle de version open-source. Il est aujourd'hui le plus populaire de ces systèmes. \
+Git est donc un système de contrôle de version open-source. Il est aujourd'hui le plus populaire de ces systèmes.  
 Il est utilisé pour tous types de projets: projet open-source, projet en entreprise, projet individuel...
 
 Les termes importants à connaître sont:
@@ -438,7 +435,7 @@ Les termes importants à connaître sont:
 
 Les repositories sont utilisés localement mais peuvent être partagés (ce sont alors des repositories à distance) pour des projets de groupes. Chacun peut alors contribuer au projet qui est stocké sur le repository à distance.
 
-Pour résumé, Git est un outil performant, open-source, robuste et sécurisé, qui facilite grandement la gestion de projets de tout types et qui assure la conservation de toutes les modifications. \
+Pour résumé, Git est un outil performant, open-source, robuste et sécurisé, qui facilite grandement la gestion de projets de tout types et qui assure la conservation de toutes les modifications.  
 Pour plus de détails sur son fonctionnement, aller dans la partie [annexe](#git).
 
 ### Github
@@ -449,10 +446,10 @@ Il existe aussi la possibilité de créer des repositories privés. C'est le cas
 
 Sur Github, chaque repository comporte une page d'accueil qui est un fichier texte servant d'introduction au projet. Ce fichier est écrit dans un langage particulier permettant une customisation lors de l'affichage.
 
-Ce langage est le langage **Markdown** (extension .md). C'est en fait un langage de balisage ou "Mark-up langage" tout comme le HTML. \
+Ce langage est le langage **Markdown** (extension .md). C'est en fait un langage de balisage ou "Mark-up langage" tout comme le HTML.  
 Un langage de balisage permet de baliser, sur du texte simple, les parties particulières comme les titres, les citations, les mots importants etc...
 
-Pour ma part j'ai rédigé ce rapport en markdown et j'ai stocké les fichiers images, pdf, et le fichier texte sur un repository Github, ce qui me permet de retrouver des anciennes versions si besoin. \
+Pour ma part j'ai rédigé ce rapport en markdown et j'ai stocké les fichiers images, pdf, et le fichier texte sur un repository Github, ce qui me permet de retrouver des anciennes versions si besoin.  
 Et plus important encore, cela m'a permis de pouvoir éditer mon rapport aussi bien chez moi qu'au travail, sans avoir besoin de déplacer les fichiers par clé USB.
 
 Github est un logiciel open-source lui même, qui jusqu'au récent rachat par Microsoft pour 7,5 milliards d'euros, n'appartenais à aucune entreprise.
@@ -477,10 +474,10 @@ L'avantage d'Atom est de pouvoir absolument tout personnaliser: la police, les c
 
 Via l'installation de packages, il est possible de rajouter n'importe quelle fonctionnalité, comme supporter la visualisation de pdf, ajouter un navigateur web intégré...
 
-Ces packages sont développés par la communauté dans un langage appelé CoffeeScript assez ressemblant au JavaScript. Il est par exemple possible de programmer ce qu'on appelle **snippet** (qui peuvent être spécifique à un langage), qui sont des fonctions que l'on utilise lors de la rédaction. \
+Ces packages sont développés par la communauté dans un langage appelé CoffeeScript assez ressemblant au JavaScript. Il est par exemple possible de programmer ce qu'on appelle **snippet** (qui peuvent être spécifique à un langage), qui sont des fonctions que l'on utilise lors de la rédaction.  
 Par exemple, en markdown, on peut écrire le texte "toc" et cela génère une "table of content" ou table des matières automatiquement.
 
-Après un certain temps d'adaptation, un tel éditeur de texte peut faire gagner un temps considérable tout en réunissant plusieurs outils dans un seul. \
+Après un certain temps d'adaptation, un tel éditeur de texte peut faire gagner un temps considérable tout en réunissant plusieurs outils dans un seul.  
 L'intégration de Git et Github dans Atom est vraiment très pratique notamment pour la rédaction de mon rapport.
 
 Je connaissais déjà les outils Git, Github et Atom avant le stage.
@@ -489,8 +486,8 @@ Je connaissais déjà les outils Git, Github et Atom avant le stage.
 
 Alors qu'Atom est pratique pour utiliser des langages "légers", pour des langages demandant plus de ressources, il est préférable d'utiliser un [IDE](#ide)
 
-Un IDE facilite l'utilisation d'un certain langage, pour IntelliJ c'est le Java. \
-Ainsi j'ai pu m'adapter et me familiariser rapidement à l'utilisation de Java. \
+Un IDE facilite l'utilisation d'un certain langage, pour IntelliJ c'est le Java.  
+Ainsi j'ai pu m'adapter et me familiariser rapidement à l'utilisation de Java.  
 On peut citer comme fonctionnalités:
 
 * auto complétion des noms de classes/objets correspondants aux conventions d'écritures pour Java
@@ -515,14 +512,14 @@ La suite d'action s'appelle en fait un **pipeline**: c'est la fonction phare de 
 
 ### Maven: projet et build Java
 
-Maven est un outil open-source et gratuit de management de [build](#build-en-java) de manière automatique. \
+Maven est un outil open-source et gratuit de management de [build](#build-en-java) de manière automatique.  
 C'est cet outil qui est appelé lors du job Jenkins évoqué précédemment.
 
 Maven est très performant pour gérer des projets (comprenant des tests par exemple) car il fonctionne sur un système de convention plutôt que configuration. C'est à dire qu'il suffit de mettre les bons fichiers au bon endroit, il n'est pas nécessaire de faire plein de configuration (pour localiser les tests par exemple).
 
 Pour finir, on peut noter que Maven installe automatiquement toutes les dépendances nécessaires au projet (il faut quand même les lui indiquer).
 
-Ainsi, il est très facile de mettre en place un projet sur sa machine, il suffit de récupérer un dossier contenant les fichiers du projet et le modèle du projet, par exemple grâce à un repository sur Github. \
+Ainsi, il est très facile de mettre en place un projet sur sa machine, il suffit de récupérer un dossier contenant les fichiers du projet et le modèle du projet, par exemple grâce à un repository sur Github.  
 Le modèle du projet est en fait un fichier XML (un autre langage de balisage) appelé POM ("Project Object Model"). Maven téléchargera automatiquement les dépendances nécessaires pour l'exécution.
 
 ![Exemple de fichier pom.xml, avec la définition de propriétés et des dépendances](pom_example.PNG)
@@ -531,7 +528,7 @@ C'est grâce à Maven est son intégration dans IntelliJ, que j'ai pu rapidement
 
 ### JUnit et Selenium: frameworks de tests
 
-On a évoqué plusieurs fois la notion de dépendances. Une dépendance est simplement un programme extérieur nécessaire à l'exécution du projet. \
+On a évoqué plusieurs fois la notion de dépendances. Une dépendance est simplement un programme extérieur nécessaire à l'exécution du projet.  
 Ces dépendances sont nécessaires lorsque l'on veut utiliser des fonctionnalités non comprises dans le langage de base.
 
 Pour utiliser ces deux outils, il faut les inclure dans le projet. Cela se fait automatiquement grâce à la gestion des dépendances de Maven.
@@ -570,8 +567,8 @@ Finalement, j'ai pu finir de coder le test. A noter que je me suis inspiré d'an
 
 ![Partie du code de test que j'ai créé](bat_scenario_selenium.PNG)
 
-Le but final étant que ce test soit automatiquement utilisé lors de l'intégration continue pour valider le bon fonctionnement de la partie ppro-coredu logiciel SAC. \
-De plus il faut que les changements que j'ai apporté localement au framework de test spécifique à SAC soient partagés avec le reste des testeurs (donc via Github). Pour ce faire, il faut qu'un autre testeur valide tout cela. \
+Le but final étant que ce test soit automatiquement utilisé lors de l'intégration continue pour valider le bon fonctionnement de la partie ppro-coredu logiciel SAC.  
+De plus il faut que les changements que j'ai apporté localement au framework de test spécifique à SAC soient partagés avec le reste des testeurs (donc via Github). Pour ce faire, il faut qu'un autre testeur valide tout cela.  
 Cela sera fait la dernière semaine et va conclure la mission.
 
 ### Missions et annexes
@@ -596,19 +593,19 @@ Pour la gestion des bugs, SAP utilise l'outil JIRA qui permet de centraliser le 
 
 Le terme **progiciel** est un mot-valise qui contracte "produit", "professionnel" et "logiciel". Il désigne une suite de logiciels applicatifs (qui sont directement utilisés pour accomplir une tâche), possédant de multiples fonctions et destinée à être utilisée par une large clientèle.
 
-Un progiciel de gestion intégré **PGI**, ou son acronyme anglophone **ERP** (Enterprise Resource Planning), forme un **système d'information** (SI) pour une entreprise. Un SI est un ensemble organisé de ressources qui permet de collecter, stocker, traiter et distribuer de l'information. \
+Un progiciel de gestion intégré **PGI**, ou son acronyme anglophone **ERP** (Enterprise Resource Planning), forme un **système d'information** (SI) pour une entreprise. Un SI est un ensemble organisé de ressources qui permet de collecter, stocker, traiter et distribuer de l'information.  
 Pour un ERP, ce SI comporte un ensemble de modules fonctionnels, couvrant typiquement les achats, les stocks, la production, les ventes, la distribution, ainsi que les salaires, la comptabilité, les finances et la trésorerie. Tous les modules proviennent donc du même fournisseur (ici SAP) et travaillent sur une base de données unique (ici **HANA**, sur laquelle on reviendra plus tard).
 
 On appelle legacy ERP une suite logicielle "On-Premise" qui a divergée du produit original du fait de customisations (développements spécifiques) importantes faites par l'entreprise. C'est donc une suite que le vendeur ne supporte plus, qui coûte cher à l'entreprise et qui est difficilement mise à jour. **On-Premise** signifie "sur site", cela veut donc dire que l'entreprise devait installer et mettre en place la suite SAP et ses bases de données sur ses propres serveurs. La maintenance devait alors être assurée par l'entreprise.
 
-Revenir aux [Généralités](#généralités). \
+Revenir aux [Généralités](#généralités).  
 Revenir aux [Produits](#les-produits).
 
 ### L'approche en V
 
 Dans ces approches traditionnelles, le client exprime avec détail son besoin avec le cahier des charges, cette structure rigide laisse peu de place au changement.
 
-On observe alors ce qu'on appelle l'effet tunnel: le client exprime son besoin, un plan rigide est déterminé avec une *deadline* ou date butoire, les développeurs se lancent dans le tunnel où le client n'a aucune visibilité puis il ressortent au moment de la deadline.\
+On observe alors ce qu'on appelle l'effet tunnel: le client exprime son besoin, un plan rigide est déterminé avec une *deadline* ou date butoire, les développeurs se lancent dans le tunnel où le client n'a aucune visibilité puis il ressortent au moment de la deadline.
 La deadline étant inamovible, il était très courant qu'à la fin, le produit soit délivré inabouti et en plus souvent en décalage par rapport au besoin initial qui a probablement changé en cours de route.
 
 Par exemple, l'approche en V consiste à planifier de façon séquentielle, et finie dans le temps, les étapes du développement. Pour cela, il faut faire une analyse complète du besoin, ce qui peut prendre des semaines pour les gros projets.
@@ -650,19 +647,19 @@ Revenir à [l'approche agile](#la-philosophie-agile).
 
 ### L'infrastructure
 
-On appelle infrastructure tout ce dont les développeurs ont besoin pour travailler. Cela prend en compte les équipements informatiques matériels ou réseaux, ainsi que l'environnement de développement utilisés par les développeurs. \
+On appelle infrastructure tout ce dont les développeurs ont besoin pour travailler. Cela prend en compte les équipements informatiques matériels ou réseaux, ainsi que l'environnement de développement utilisés par les développeurs.  
 Par environnement de développement on entend l'ensemble des logiciels, librairies, outils utilisés pour développer.
 
 La partie infrastructure est très importante. Les développeurs doivent pouvoir accéder à des machines (et donc mémoire vive, processeurs) autres que celle sur laquelle ils codent. En fait, des qu'ils font autre chose que du codage, les développeurs font appel à des machines virtuelles qui font des opérations à leur place.
 
 De plus, tout le monde doit pouvoir utiliser le même environnement et pouvoir le mettre en place assez rapidement, aussi de manière automatique.
 
-Plus de détails sur l'infrastructure SAP avec l'outil [Monsoon](#monsoon-linfrastructure-sap) développé par SAP. \
+Plus de détails sur l'infrastructure SAP avec l'outil [Monsoon](#monsoon-linfrastructure-sap) développé par SAP.  
 Revenir vers l'[équipe transversale](#léquipe-transversale).
 
 ### Livraison et déploiement de l'application
 
-Comme expliqué précédemment, le logiciel SAC est développé en continu tout en proposant des versions utilisables (stables) aux clients. \
+Comme expliqué précédemment, le logiciel SAC est développé en continu tout en proposant des versions utilisables (stables) aux clients.  
 La pratique DevOps étant encore en cours d'implémentation pour le département SAC, les modifications du logiciel ne sont pas instantanées et prennent en fait 6 semaines avant d'être délivrées.
 
 #### Life Cycle Management (LCM)
@@ -677,7 +674,7 @@ La phase de développement sur Dev donc sur Master prend toute la durée d'un sp
 
 A chaque fin de sprint, l'espace MASTER de chaque équipe est déployé dans l'espace **STABI**. Cet espace commun est censé être stable mais il est encore testé pendant deux semaines.
 
-En fin de phase de stabilisation, l'espace STABI est déployé dans l'espace **REL**(ease) qui est en fait le produit considéré comme terminé. \
+En fin de phase de stabilisation, l'espace STABI est déployé dans l'espace **REL**(ease) qui est en fait le produit considéré comme terminé.  
 Par sécurité il est encore testé par des clients bêta pendant 2 semaines.
 
 Ainsi une wave dure 6 semaines, du développement à la sortie ("release").
@@ -692,11 +689,11 @@ Assez naturellement, on va utiliser Jenkins pour créer un job qui se déclenche
 
 La première étape est de **build** le commit avec le reste du logiciel (qui est normalement stable), c'est à dire que l'on construit une nouvelle version du logiciel comprenant les changements apportés.
 
-Ensuite le build (on associe l'objet créer après l'étape build au nom de l'étape) passe une série de tests automatiques (donc d'intégration, de performances, des tests fonctionnels, des tests liés à des restrictions légales ...). \
+Ensuite le build (on associe l'objet créer après l'étape build au nom de l'étape) passe une série de tests automatiques (donc d'intégration, de performances, des tests fonctionnels, des tests liés à des restrictions légales ...).  
 Il existe aussi des critères d'acceptation liés au test coverage: il doit être de plus de 90% lors de tous ces tests.
 
-Si tout les tests sont des succès, le commit reçoit un "+1", est validé et est intégré dans la branche principale Git. \
-Chez SAP, on rajoute une sécurité: il faut que quelqu'un vérifie le code (il fait un "code review") et donne son "+1". \
+Si tout les tests sont des succès, le commit reçoit un "+1", est validé et est intégré dans la branche principale Git.  
+Chez SAP, on rajoute une sécurité: il faut que quelqu'un vérifie le code (il fait un "code review") et donne son "+1".  
 Ainsi seul un "+2" permet à un commit d'être intégré.
 
 Revenir à [Jenkins](#jenkins-ou-lautomatisation).
@@ -709,7 +706,7 @@ La livraison en continu est en fait le prolongement de l'intégration en continu
 
 En principe le déploiement en continu revient à déployer directement chaque commit dans l'application finale. Il faut pour cela que des mesures soient prises dès le développement du code.
 
-Chez SAP le déploiement en continu ne s'applique que pour l'espace Dev. En effet, dès qu'un commit est intégré, il est livré puis déployé automatiquement dans Dev. \
+Chez SAP le déploiement en continu ne s'applique que pour l'espace Dev. En effet, dès qu'un commit est intégré, il est livré puis déployé automatiquement dans Dev.  
 Par contre, comme expliqué dans le LCM, Dev n'est pas l'application finale.
 
 La stratégie à appliquer pour permettre le déploiement en continu est de concevoir le logiciel par composants, et non comme un tout (l'approche dite monolithique).
@@ -743,23 +740,23 @@ Revenir à [Maven](#maven-projet-et-build-java).
 
 ### Git
 
-Le principe de Git est de copier l'intégralité des fichiers d'un dossier, puis d'enregistrer une première version ou premier "snapshot" qui est en fait un objet qui pointe vers l'ensemble des fichiers copiés. \
+Le principe de Git est de copier l'intégralité des fichiers d'un dossier, puis d'enregistrer une première version ou premier "snapshot" qui est en fait un objet qui pointe vers l'ensemble des fichiers copiés.  
 Si une modification est apportée à un fichier, alors Git prend un autre "snapshot". Ce second snapshot pointera vers les mêmes fichiers que le premier, excepté pour le fichier modifié: pour lui, il pointera vers une seconde copie de ce fichier (on remarquera que la 1ere copie est conservée en mémoire).
 
-Pour être plus précis, l'utilisateur fait un certain nombre de modifications sur les fichiers, puis les ajoute en même temps dans l'historique de Git, accompagné d'une description des changements. Cet ajout est appelé "commit". Un commit comprend donc un snapshot et un message associé. \
+Pour être plus précis, l'utilisateur fait un certain nombre de modifications sur les fichiers, puis les ajoute en même temps dans l'historique de Git, accompagné d'une description des changements. Cet ajout est appelé "commit". Un commit comprend donc un snapshot et un message associé.  
 On appelle "repository" la structure de donnée qui contient la suite des commits et les fichiers associés aux snapshot.
 
 Ainsi Git conserve un historique de toutes les commits de manière successive, et à tout moment on peut retrouver le dossier dans le même état que lors du commit de notre choix.
 
 Git fonctionne d'abord localement: le repository est stocké sur la machine local. Il est possible de partager ce repository sur un serveur: on a alors un remote repository. D'autres utilisateurs peuvent alors "cloner" ce repository et l'utiliser à leur tour localement.
 
-Quand ce deuxième utilisateur veut pousser ("push") ses changements sur le remote repository, il doit d'abord s'assurer qu'il n'est pas en retard par rapport à ce repository. \
+Quand ce deuxième utilisateur veut pousser ("push") ses changements sur le remote repository, il doit d'abord s'assurer qu'il n'est pas en retard par rapport à ce repository.  
 S'il l'est, il doit alors tirer ("pull") les changements, les intégrer dans son repository local et enfin il peut pousser ses changements.
 
-On peut noter comme fonctionnalité phare la possibilité de faire des branches. Une branche a un commit d'origine puis a ses propres commits. \
+On peut noter comme fonctionnalité phare la possibilité de faire des branches. Une branche a un commit d'origine puis a ses propres commits.  
 Ainsi la première branche est celle créée à l'initialisation du repository, communément appelée "master".
 
-A partir d'un certain commit, on peut créer une nouvelle branche, qui va dévier de l'évolution de master, généralement pour ajouter une fonctionnalité. \
+A partir d'un certain commit, on peut créer une nouvelle branche, qui va dévier de l'évolution de master, généralement pour ajouter une fonctionnalité.  
 Quand on a fini de développer la fonctionnalité, on mélange ("merge") cette branche à master.
 
 Si entre temps master a évolué, il faut intégrer les changements ajoutés sur master. S'il y a un conflit (quand les modifications que la branche auxiliaire sont sur la même partie de code que celles de master), il faut le résoudre avant le mélange.
@@ -776,13 +773,13 @@ Un langage de script est un langage donc le code est lu, traduit et exécuté un
 
 Pour des programmes plus gros, qui demandent plus de ressources, notamment dans des langages qui nécessitent beaucoup de dépendances et outils pour fonctionner, il est possible d'utiliser Atom mais ce n'est pas le plus optimisé.
 
-Il est conseillé d'utiliser ce qu'on appelle des IDEs ou *Integrated Development Envrironment* ou environnement intégré de développement. \
+Il est conseillé d'utiliser ce qu'on appelle des IDEs ou *Integrated Development Envrironment* ou environnement intégré de développement.  
 Un IDE est en faite un gros logiciel qui permet de développer des logiciels donc de la programmation à la construction du logiciel.
 
-Les IDE sont souvent spécialisés dans un certain langage. Par exemple Microsoft Visual Studio est spécialisé pour le C++, alors que IntelliJ est spécialisé pour le Java. \
+Les IDE sont souvent spécialisés dans un certain langage. Par exemple Microsoft Visual Studio est spécialisé pour le C++, alors que IntelliJ est spécialisé pour le Java.  
 J'avais précédemment déjà utilisé le C++ et donc Visual Studio. J'ai du m'adapter et apprendre le Java et IntelliJ pour le stage.
 
-Il faut savoir que le langage utilisé n'a pas une si grande importance, tant que les principes de programmations sont compris. De plus le Java et le C++ sont plutôt proches dans leur style: \
+Il faut savoir que le langage utilisé n'a pas une si grande importance, tant que les principes de programmations sont compris. De plus le Java et le C++ sont plutôt proches dans leur style:  
 Ils sont tous les deux orientés objet, ce qui signifie que l'on manipule quasiment que des objets (structure de donnée) définies dans des classes dans les programmes, avec quelques grands principes comme l'héritage, le polymorphisme ...
 
 Revenir à l'outil [IntelliJ](#intellij-ide-pour-java).
@@ -804,17 +801,17 @@ Revenir à l'outil [IntelliJ](#intellij-ide-pour-java).
 
 On rappelle qu'ici l'infrastructure correspond aux ressources qui peuvent être mises à disposition pour les développeurs ou testeurs.
 
-Par ressources on entend majoritairement les VMs ou machines virtuelles. Une VM se comporte comme un simple ordinateur, utilisant sa propre mémoire vive, son propre système d'exploitation, ses propres processeurs... \
+Par ressources on entend majoritairement les VMs ou machines virtuelles. Une VM se comporte comme un simple ordinateur, utilisant sa propre mémoire vive, son propre système d'exploitation, ses propres processeurs...  
 Cependant il est possible à l'aide d'un superviseur, comme Hypervisor, de créer des machines virtuelles utilisant des ressources "partagées".
 
-Classiquement, un ordinateur possède du *hardware* (ou matériel, comme un disque dur etc...) qui sont liés entre eux et qui lui est dédié. \
+Classiquement, un ordinateur possède du *hardware* (ou matériel, comme un disque dur etc...) qui sont liés entre eux et qui lui est dédié.  
 Une VM quant à elle simule un ordinateur en isolant et s'appropriant des parties de hardware.
 
 Ainsi il est possible à partir d'un grand nombre de disque durs, processeurs, mémoires RAM de créer plusieurs VMs qui utilisent les ressources qu'elles veulent (deux VMs peuvent utiliser du stockage sur le même disque dur).
 
 Une VM ainsi créée se comporte exactement comme un ordinateur, avec notamment son propre système d'exploitation.
 
-SAP utilise aujourd'hui Monsoon 2.0 pour gérer la création et l'affectations des VMs aux développeurs. \
+SAP utilise aujourd'hui Monsoon 2.0 pour gérer la création et l'affectations des VMs aux développeurs.  
 Par un simple click, un développeur peut se procure une VM sous Linux, utilisant 120gb de RAM, 10 processeurs et 10To de stockage.
 
 De plus, avec ce qu'on appelle des *ready-made* ou prêt à l'emploi, initialiser ses VMs avec l'environnement que l'on veut (OS, logiciels ...).
