@@ -308,7 +308,7 @@ Le Back-end correspond à la partie "cachée" du logiciel: c'est celle qui impl�
 Mon équipe de développeur quant à elle a les deux rôles, bien que l'algorithme le plus fondamental est implémenté par une autre équipe. Cet algorithme est le noyau prédictif, qui est en cours de développement et qui permet de grâce au ML (Machine Learning) de faire des analyses prédictives sur la [base de données HANA](#hana). \
 Cet algorithme provient d'une ancienne start-up rachetée par SAP: Kxen. Une bonne partie des personnes travaillant aujourd'hui autour de ce produit faisaient alors partie de Kxen.
 
-Ainsi le rôle de cette équipe et d'implémenter les échanges avec le noyau prédictif, HANA, et la UI sur toutes la partie du logiciel SAC concernant la manipulation de modèle prédictif. Pour rappel, un modèle prédictif permet à partir d'un ensemble de données de prévoir l'évolution d'une autre donnée, qui peut être par exemple si oui ou non un prospect va probablement acheter un produit SAP.
+Ainsi le rôle de cette équipe est d'implémenter les échanges avec le noyau prédictif, HANA, et la UI sur toute la partie du logiciel SAC concernant la manipulation de modèle prédictif. Pour rappel, un modèle prédictif permet à partir d'un ensemble de données de prévoir l'évolution d'une autre donnée, qui peut être par exemple si oui ou non un prospect va probablement acheter un produit SAP.
 
 #### L'équipe transversale
 
@@ -321,7 +321,7 @@ Dans les rôles de support, on compte:
 * la qualité
 
 [L'infrastructure](#linfrastructure) correspond à l'ensemble des ressources matérielles (puissance de calcul) et des outils fournis aux développeurs pour leur permettre de programmer dans les meilleurs conditions et dans des environnements uniformisés. \
-On peut citer comme métier associé celui d'Infrastructure Owner responsable de la gestion/l'allocation de ces ressources. (voir Annexes/Divers et Outils)
+On peut citer comme métier associé celui d'Infrastructure Owner responsable de la gestion/l'allocation de ces ressources.
 
 Le déploiement correspond à l'ensemble des procédures et outils utilisés pour optimiser (au niveau du temps, du traitement) les processus allant de la programmation à la publication dans le logiciel.
 On peut citer comme métier associé celui de DevOps Manager responsable d'inculquer aux équipes les bonnes pratiques de l'approche DevOps.
@@ -330,7 +330,7 @@ Vient ensuite la qualité, c'est sur cette partie que mon stage portait. \
 La qualité est l'ensemble des procédures permettant de vérifier le bon fonctionnement et la pertinence (par rapport au client) du logiciel.
 On peut citer comme métier associé celui de QA Lead ou responsable qualité.
 
-Dans ces trois rôles, il est important de remarquer qu'une grande partie du travail tend à rendre les processus automatiques. Et ce pour des questions de rapidité et donc de coût, et de mise à l'échelle.
+Dans ces trois rôles, il est important de remarquer qu'une grande partie du travail tend à rendre les processus automatiques. Et ce pour des questions de rapidité et donc de coût et de mise à l'échelle.
 
 ### La Qualité
 
