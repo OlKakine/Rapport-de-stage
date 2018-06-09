@@ -38,15 +38,15 @@ J'ai reçu un accueil, chez SAP et dans mes équipes, des plus chalereux, en con
 
 C'est pourquoi je tenais à adresser mes remerciements les plus sincères à plusieurs personnes.
 
-Je pense en premier lieu à mon manager David qui m'a fait confiance, qui m'a intégré dans l'équipe et qui m'a supporté dès le premier jour. Merci encore pour toute cette motivation et ces attentions que tu m'as porté.
+Je pense en premier lieu à mon manager David qui m'a fait confiance, qui m'a intégré dans l'équipe et qui m'a supporté dès le premier jour. Merci encore pour toute cette motivation.
 
 Vient ensuite Sophie, mon maître de stage, qui m'a consacré beaucoup de temps et de ressources (notamment ce beau poste de travail). J'ai pu évoluer rapidement dans mon travail grâce à toi et tes nombreux conseils. Je retiens particulièrement les repas partagés, la bonne humeur et les blagues (ainsi que mes victoires sur Duel Quizz).
 
-Avec Sopie est venu la rencontre avec Dominik, l'autre stagiaire, avec qui j'ai passé beaucoup de temps. On s'est rapproché rapidement du fait de la proximité d'âge notamment. On a vécu beaucoup de moments marquants, commme la défaite cuisante au babyfoot, le café-vanille, la victoire à la pétanque, la soirée Spring Break... \
-Merci pour tous ces moments d'échanges et de convivialité!
+J'ai pu ensuite recontrer Dominik, l'autre stagiaire, avec qui j'ai passé beaucoup de temps. On s'est rapproché rapidement du fait de la proximité d'âge notamment. On a vécu beaucoup de moments marquants, commme la défaite cuisante au babyfoot, le café-vanille, la victoire à la pétanque, la soirée Spring Break... \
+Merci pour tous ces moments d'échange et de convivialité!
 
-Je tenais à remercier toutes mes équipiers qui m'ont accueilli sans me mettre à distance, et qui au contraire se sont intéressés à moi et m'ont intégrés directement dans l'équipe. Votre cohésion et complicité m'ont permis d'être à l'aise dans une très bonne ambiance de travail. \
-Plus particulièrement je voulais remercier Christian, Dominique, Rovland, Magali, Guillaume, Minh, David et Jacques pour m'avoir fournis des aides précieurses voire des formations qui ont permis une bien meilleure compréhension des outils et des métiers.
+Je tenais à remercier tous mes équipiers qui m'ont accueilli sans me mettre à distance, et qui au contraire se sont intéressés à moi et m'ont intégré directement dans l'équipe. Votre cohésion et complicité m'ont permis d'être à l'aise dans une très bonne ambiance de travail. \
+Plus particulièrement je voulais remercier Christian, Dominique, Rovland, Magali, Guillaume, Minh, David et Jacques pour m'avoir fourni des aides précieuses voire des formations qui ont facilité ma compréhension des outils et des métiers.
 
 Pour finir, je remercie la direction de SAP ainsi que le personnel (à l'accueil, les cuisiniers, les techniciens de surface ...) pour m'avoir permis de faire mon stage dans un environnement de vie et de travail plus qu'agréable.
 
@@ -571,7 +571,7 @@ Ainsi j'avais pour missions de faire toute une batterie de tests manuels sur le 
 
 Pour la gestion des bugs, SAP utilise l'outil JIRA qui permet de centraliser le suivi des bugs et des tâches (liées aux bugs ou non).
 
-# Conclusion 
+# Conclusion
 
 Pendant mon stage, j'ai travaillé sur une partie d'un logiciel SAP en cours de développement dans le **Cloud**.  
 Cependant, je n'ai pas participé directement au développement de ce logiciel mais j'ai aidé à le faciliter grâce à une activité de support: les **tests automatiques**.
