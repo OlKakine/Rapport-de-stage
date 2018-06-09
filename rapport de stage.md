@@ -1,12 +1,62 @@
-% Assistance à la mise en oeuvre d'une stratégie de tests automatisés
+% Rapport de stage: Assistance à la mise en oeuvre d'une stratégie de tests automatisés
 % Olivier CHECCHIN
-% Stage du 30/04/18 au 15/06/18
+% Stage chez SAP, du 30/04/18 au 15/06/18
 
 # Introduction
 
-Dans le cadre de stage obligatoire de fin d'année pour la formation délivrée par La Prépa des INPs, j'ai effectué un stage d'une durée d'un mois et demi dans l'entreprise SAP.
+## Avant-propos
 
-- [faire l'intro a la fin ]
+Ce rapport de stage n'a pas été rédigé de manière optimisée pour être publié en format PDF. \
+En effet, il a été écrit en Markdown: le langage optimisé pour être utilisé par Github dont on parlera plus tard. Le but étant de montrer un exemple pratique d'utilisation d'un outil informatique très populaire.
+
+J'ai donc stocké mon rapport de stage et les fichiers associés dans un dépôt Github pour pouvoir travailler dessus.
+
+Néanmoins, pour des raisons de confidentialité, il n'est pas possible d'accéder à ce dépôt qui est pour l'instant privé. Il sera disponible à partir du 16 Juin en suivant ce [lien](https://github.com/OlKakine/Rapport-de-stage).
+
+La lecture sera alors beaucoup plus agréable, mais le contenu sera le même que sous le format PDF.
+
+## Informations complémentaires
+
+Dans le cadre de stage obligatoire de fin d'année pour la formation délivrée par La Prépa des INP, j'ai effectué un stage d'une durée d'un mois et demi dans l'entreprise SAP. \
+Mon tuteur enseignant est Mme.ESCOLIN qui enseigne la Culture Générale à La Prépa. \
+Mon maître de stage est Mme.ELGHARIB qui travaille chez SAP en tant que QA Lead.
+
+![Les différents logos](logos.png){ height=100px}
+
+## Résumé
+
+Pendant mon stage, j'ai travaillé sur une partie d'un logiciel SAP en cours de développement dans le **Cloud**. \
+Cependant, je n'ai pas participé directement au développement de ce logiciel mais j'ai aidé à le faciliter grâce à une activité de support: les **tests automatiques**.
+
+Dans le cadre de nouvelles méthodes et philosophies de travail, ces tests ainsi que d'autres tâches automatiques deviennent primordiales dans la conception des logiciels.
+
+Un concept à retenir est celui de **déploiement en continu**, qui est le but à atteindre pour la production de logiciels Cloud.
+
+Afin de réaliser ma mission, j'ai du faire un travail important de recherche et de compréhension que ce soit sur les nouveaux outils ou les nouvelles méthodes de travail.
+
+Au final, j'ai réussi à coder le test automatique qui était en fait ma mission. Pour ce faire, j'ai dû aussi contribuer à l'**environnement de travail** permmettant de coder les tests automatiques.
+
+En parallèle, je me suis intéressé aux algorithmes prédicitifs utilisés par le logiciel, qui fonctionnent sur la base du **Machine Learning**. J'ai pu constater qu'une partie des connaissances (liées à l'optimisation) que j'ai acquises en Mathématiques et dans le thême Informatique sont très utilisées dans ce domaine.
+
+Pour conclure, je dirais que cette première expérience de travail collaboratif de grande ampleur m'a permis de découvrir beaucoups de choses (notamment plein de métiers différents) qui me serviront sûrement dans le futur. De plus ce stage qui s'est déroulé dans de très bonnes conditions a confirmé mon envie de me spécialiser dans l'informatique. \
+
+## Remerciements
+
+J'ai reçu un accueil, chez SAP et dans mes équipes, des plus chalereux, en contraste avec un environnement parisien plutôt hostile.
+
+C'est pourquoi je tenais à adresser mes remerciements les plus sincères à plusieurs personnes.
+
+Je pense en premier lieu à mon manager David qui m'a fait confiance, qui m'a intégré dans l'équipe et qui m'a supporté dès le premier jour. Merci encore pour toute cette motivation et ces attentions que tu m'a porté.
+
+Vient ensuite Sophie, mon maître de stage, qui m'a consacré beaucoup de temps et de ressources (notamment ce beau poste de travail). J'ai pu évoluer rapidement dans mon travail grâce à toi et tes nombreux conseils. Je retiens particulièrement les repas partagés, la bonne humeur et les blagues (ainsi que mes victoires sur Duel Quizz).
+
+Avec Sopie est venu la rencontre avec Dominik, l'autre stagiaire, avec qui j'ai passé beaucoup de temps. On s'est rapproché rapidement du fait de la proximité d'âge notamment. On a vécu beaucoup de moments marquants, commme la défaite cuisante au babyfoot, le café-vanille, la victoire à la pétanque, la soirée Spring Break... \
+Merci pour tous ces moments d'échanges et de convivialité!
+
+Je tenais à remercier toutes mes équipiers qui m'ont accueilli sans me mettre à distance, et qui au contraire se sont intéressés à moi et m'ont intégrés directement dans l'équipe. Votre cohésion et complicité m'ont permis d'être à l'aise dans une très bonne ambiance de travail. \
+Plus particulièrement je voulais remercier Christian, Dominique, Rovland, Magali, Guillaume, Minh, David et Jacques pour m'avoir fournis des aides précieurses voire des formations qui ont permis une bien meilleure compréhension des outils et des métiers.
+
+Pour finir, je remercie la direction de SAP ainsi que le personnel (à l'accueil, les cuisiniers, les techniciens de surface ...) pour m'avoir permis de faire mon stage dans un environnement de vie et de travail plus qu'agréable.
 
 # Cadre du stage
 
