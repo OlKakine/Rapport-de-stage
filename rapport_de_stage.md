@@ -22,23 +22,6 @@ Mon maître de stage est Mme.ELGHARIB qui travaille chez SAP en tant que QA Lead
 
 ![Les différents logos](logos.png)
 
-## Résumé
-
-Pendant mon stage, j'ai travaillé sur une partie d'un logiciel SAP en cours de développement dans le **Cloud**.  
-Cependant, je n'ai pas participé directement au développement de ce logiciel mais j'ai aidé à le faciliter grâce à une activité de support: les **tests automatiques**.
-
-Dans le cadre de nouvelles méthodes et philosophies de travail, ces tests ainsi que d'autres tâches automatiques deviennent primordiales dans la conception des logiciels.
-
-Un concept à retenir est celui de **déploiement en continu**, qui est le but à atteindre pour la production de logiciels Cloud.
-
-Afin de réaliser ma mission, j'ai du faire un travail important de recherche et de compréhension que ce soit sur les nouveaux outils ou les nouvelles méthodes de travail.
-
-Au final, j'ai réussi à coder le test automatique qui était en fait ma mission. Pour ce faire, j'ai dû aussi contribuer à l'**environnement de travail** permmettant de coder les tests automatiques.
-
-En parallèle, je me suis intéressé aux algorithmes prédicitifs utilisés par le logiciel, qui fonctionnent sur la base du **Machine Learning**. J'ai pu constater qu'une partie des connaissances (liées à l'optimisation) que j'ai acquises en Mathématiques et dans le thême Informatique sont très utilisées dans ce domaine.
-
-Pour conclure, je dirais que cette première expérience de travail collaboratif de grande ampleur m'a permis de découvrir beaucoups de choses (notamment plein de métiers différents) qui me serviront sûrement dans le futur. De plus ce stage qui s'est déroulé dans de très bonnes conditions a confirmé mon envie de me spécialiser dans l'informatique.
-
 ## Remerciements
 
 J'ai reçu un accueil, chez SAP et dans mes équipes, des plus chalereux, en contraste avec un environnement parisien plutôt hostile.
@@ -577,6 +560,23 @@ Ainsi j'avais pour missions de faire toute une batterie de tests manuels sur le 
 [(doc) Exemple de bug à valider](bug_to_validate.doc)
 
 Pour la gestion des bugs, SAP utilise l'outil JIRA qui permet de centraliser le suivi des bugs et des tâches (liées aux bugs ou non).
+
+# Conclusion
+
+Pendant mon stage, j'ai travaillé sur une partie d'un logiciel SAP en cours de développement dans le **Cloud**.  
+Cependant, je n'ai pas participé directement au développement de ce logiciel mais j'ai aidé à le faciliter grâce à une activité de support: les **tests automatiques**.
+
+Dans le cadre de nouvelles méthodes et philosophies de travail, ces tests ainsi que d'autres tâches automatiques deviennent primordiales dans la conception des logiciels.
+
+Un concept à retenir est celui de **déploiement en continu**, qui est le but à atteindre pour la production de logiciels Cloud.
+
+Afin de réaliser ma mission, j'ai du faire un travail important de recherche et de compréhension que ce soit sur les nouveaux outils ou les nouvelles méthodes de travail.
+
+Au final, j'ai réussi à coder le test automatique qui était en fait ma mission. Pour ce faire, j'ai dû aussi contribuer à l'**environnement de travail** permmettant de coder les tests automatiques.
+
+En parallèle, je me suis intéressé aux algorithmes prédicitifs utilisés par le logiciel, qui fonctionnent sur la base du **Machine Learning**. J'ai pu constater qu'une partie des connaissances (liées à l'optimisation) que j'ai acquises en Mathématiques et dans le thême Informatique sont très utilisées dans ce domaine.
+
+Pour conclure, je dirais que cette première expérience de travail collaboratif de grande ampleur m'a permis de découvrir beaucoups de choses (notamment plein de métiers différents) qui me serviront sûrement dans le futur. De plus ce stage qui s'est déroulé dans de très bonnes conditions a confirmé mon envie de me spécialiser dans l'informatique.
 
 # Annexes
 
