@@ -28,15 +28,15 @@ J'ai reçu un accueil, chez SAP et dans mes équipes, des plus chalereux, en con
 
 C'est pourquoi je tenais à adresser mes remerciements les plus sincères à plusieurs personnes.
 
-Je pense en premier lieu à mon manager David qui m'a fait confiance, qui m'a intégré dans l'équipe et qui m'a supporté dès le premier jour. Merci encore pour toute cette motivation et ces attentions que tu m'as porté.
+Je pense en premier lieu à mon manager David qui m'a fait confiance, qui m'a intégré dans l'équipe et qui m'a supporté dès le premier jour. Merci encore pour toute cette motivation.
 
 Vient ensuite Sophie, mon maître de stage, qui m'a consacré beaucoup de temps et de ressources (notamment ce beau poste de travail). J'ai pu évoluer rapidement dans mon travail grâce à toi et tes nombreux conseils. Je retiens particulièrement les repas partagés, la bonne humeur et les blagues (ainsi que mes victoires sur Duel Quizz).
 
-Avec Sopie est venu la rencontre avec Dominik, l'autre stagiaire, avec qui j'ai passé beaucoup de temps. On s'est rapproché rapidement du fait de la proximité d'âge notamment. On a vécu beaucoup de moments marquants, commme la défaite cuisante au babyfoot, le café-vanille, la victoire à la pétanque, la soirée Spring Break...  
-Merci pour tous ces moments d'échanges et de convivialité!
+J'ai pu ensuite recontrer Dominik, l'autre stagiaire, avec qui j'ai passé beaucoup de temps. On s'est rapproché rapidement du fait de la proximité d'âge notamment. On a vécu beaucoup de moments marquants, commme la défaite cuisante au babyfoot, le café-vanille, la victoire à la pétanque, la soirée Spring Break... \
+Merci pour tous ces moments d'échange et de convivialité!
 
-Je tenais à remercier toutes mes équipiers qui m'ont accueilli sans me mettre à distance, et qui au contraire se sont intéressés à moi et m'ont intégrés directement dans l'équipe. Votre cohésion et complicité m'ont permis d'être à l'aise dans une très bonne ambiance de travail.  
-Plus particulièrement je voulais remercier Christian, Dominique, Rovland, Magali, Guillaume, Minh, David et Jacques pour m'avoir fournis des aides précieurses voire des formations qui ont permis une bien meilleure compréhension des outils et des métiers.
+Je tenais à remercier tous mes équipiers qui m'ont accueilli sans me mettre à distance, et qui au contraire se sont intéressés à moi et m'ont intégré directement dans l'équipe. Votre cohésion et complicité m'ont permis d'être à l'aise dans une très bonne ambiance de travail. \
+Plus particulièrement je voulais remercier Christian, Dominique, Rovland, Magali, Guillaume, Minh, David et Jacques pour m'avoir fourni des aides précieuses voire des formations qui ont facilité ma compréhension des outils et des métiers.
 
 Pour finir, je remercie la direction de SAP ainsi que le personnel (à l'accueil, les cuisiniers, les techniciens de surface ...) pour m'avoir permis de faire mon stage dans un environnement de vie et de travail plus qu'agréable.
 
@@ -298,7 +298,7 @@ Le Back-end correspond à la partie "cachée" du logiciel: c'est celle qui impl�
 Mon équipe de développeur quant à elle a les deux rôles, bien que l'algorithme le plus fondamental est implémenté par une autre équipe. Cet algorithme est le noyau prédictif, qui est en cours de développement et qui permet de grâce au ML (Machine Learning) de faire des analyses prédictives sur la [base de données HANA](#hana).  
 Cet algorithme provient d'une ancienne start-up rachetée par SAP: Kxen. Une bonne partie des personnes travaillant aujourd'hui autour de ce produit faisaient alors partie de Kxen.
 
-Ainsi le rôle de cette équipe et d'implémenter les échanges avec le noyau prédictif, HANA, et la UI sur toutes la partie du logiciel SAC concernant la manipulation de modèle prédictif. Pour rappel, un modèle prédictif permet à partir d'un ensemble de données de prévoir l'évolution d'une autre donnée, qui peut être par exemple si oui ou non un prospect va probablement acheter un produit SAP.
+Ainsi le rôle de cette équipe est d'implémenter les échanges avec le noyau prédictif, HANA, et la UI sur toute la partie du logiciel SAC concernant la manipulation de modèle prédictif. Pour rappel, un modèle prédictif permet à partir d'un ensemble de données de prévoir l'évolution d'une autre donnée, qui peut être par exemple si oui ou non un prospect va probablement acheter un produit SAP.
 
 #### L'équipe transversale
 
@@ -311,7 +311,7 @@ Dans les rôles de support, on compte:
 * la qualité
 
 [L'infrastructure](#linfrastructure) correspond à l'ensemble des ressources matérielles (puissance de calcul) et des outils fournis aux développeurs pour leur permettre de programmer dans les meilleurs conditions et dans des environnements uniformisés.  
-On peut citer comme métier associé celui d'Infrastructure Owner responsable de la gestion/l'allocation de ces ressources. (voir Annexes/Divers et Outils)
+On peut citer comme métier associé celui d'Infrastructure Owner responsable de la gestion/l'allocation de ces ressources.
 
 Le déploiement correspond à l'ensemble des procédures et outils utilisés pour optimiser (au niveau du temps, du traitement) les processus allant de la programmation à la publication dans le logiciel.
 On peut citer comme métier associé celui de DevOps Manager responsable d'inculquer aux équipes les bonnes pratiques de l'approche DevOps.
@@ -809,7 +809,7 @@ Par un simple click, un développeur peut se procure une VM sous Linux, utilisan
 
 De plus, avec ce qu'on appelle des *ready-made* ou prêt à l'emploi, initialiser ses VMs avec l'environnement que l'on veut (OS, logiciels ...).
 
-C'est le rôle de l'INFRA Owner de fournir ces ready-mades.
+C'est le rôle de l'Infrastructure Owner de fournir ces ready-mades.
 
 SAP a la volonté de passer sur Monsoon 3.0 aussi appelé Converged Cloud. Le but est d'avoir un seul système qui permet de fournir des VMs, des *baremetal* (directement du hardware, sans logiciels/*software* dessus).
 
