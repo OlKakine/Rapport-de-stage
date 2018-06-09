@@ -571,7 +571,7 @@ Ainsi j'avais pour missions de faire toute une batterie de tests manuels sur le 
 
 Pour la gestion des bugs, SAP utilise l'outil JIRA qui permet de centraliser le suivi des bugs et des tâches (liées aux bugs ou non).
 
-# Conclusion
+# Résumé et Conclusion
 
 Pendant mon stage, j'ai travaillé sur une partie d'un logiciel SAP en cours de développement dans le **Cloud**.  
 Cependant, je n'ai pas participé directement au développement de ce logiciel mais j'ai aidé à le faciliter grâce à une activité de support: les **tests automatiques**.
