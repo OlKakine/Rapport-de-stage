@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Introduction](#introduction)
@@ -63,6 +64,8 @@
 
 <!-- /TOC -->
 
+=======
+>>>>>>> c0338ec19929ead6b2951f85797e00b03c42e917
 # Introduction
 
 ## Avant-propos
