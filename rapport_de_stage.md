@@ -32,10 +32,10 @@ Je pense en premier lieu à mon manager David qui m'a fait confiance, qui m'a in
 
 Vient ensuite Sophie, mon maître de stage, qui m'a consacré beaucoup de temps et de ressources (notamment ce beau poste de travail). J'ai pu évoluer rapidement dans mon travail grâce à toi et tes nombreux conseils. Je retiens particulièrement les repas partagés, la bonne humeur et les blagues (ainsi que mes victoires sur Duel Quizz).
 
-J'ai pu ensuite recontrer Dominik, l'autre stagiaire, avec qui j'ai passé beaucoup de temps. On s'est rapproché rapidement du fait de la proximité d'âge notamment. On a vécu beaucoup de moments marquants, commme la défaite cuisante au babyfoot, le café-vanille, la victoire à la pétanque, la soirée Spring Break... \
+J'ai pu ensuite recontrer Dominik, l'autre stagiaire, avec qui j'ai passé beaucoup de temps. On s'est rapproché rapidement du fait de la proximité d'âge notamment. On a vécu beaucoup de moments marquants, commme la défaite cuisante au babyfoot, le café-vanille, la victoire à la pétanque, la soirée Spring Break...  
 Merci pour tous ces moments d'échange et de convivialité!
 
-Je tenais à remercier tous mes équipiers qui m'ont accueilli sans me mettre à distance, et qui au contraire se sont intéressés à moi et m'ont intégré directement dans l'équipe. Votre cohésion et complicité m'ont permis d'être à l'aise dans une très bonne ambiance de travail. \
+Je tenais à remercier tous mes équipiers qui m'ont accueilli sans me mettre à distance, et qui au contraire se sont intéressés à moi et m'ont intégré directement dans l'équipe. Votre cohésion et complicité m'ont permis d'être à l'aise dans une très bonne ambiance de travail.  
 Plus particulièrement je voulais remercier Christian, Dominique, Rovland, Magali, Guillaume, Minh, David et Jacques pour m'avoir fourni des aides précieuses voire des formations qui ont facilité ma compréhension des outils et des métiers.
 
 Pour finir, je remercie la direction de SAP ainsi que le personnel (à l'accueil, les cuisiniers, les techniciens de surface ...) pour m'avoir permis de faire mon stage dans un environnement de vie et de travail plus qu'agréable.
@@ -50,7 +50,7 @@ SAP SE ou seulement SAP (SE signifiant "Societas Europaea" en latin) est une ent
 
 Selon la liste Forbes de 2017 "The World's Biggest Public Companies", SAP est le premier producteur européen de logiciels et le troisième mondial derrière Microsoft (1) et Oracle (2). SAP est donc en concurrence directe avec Oracle et Microsoft, notamment sur son produit phare qui est le **progiciel de gestion intégrée**: SAP [ERP](#erp).
 
-![Forbes 2017 list of "The World's Biggest Public Companies"](Liste_Forbes_2017.png)}
+![Forbes 2017 list of "The World's Biggest Public Companies"](Liste_Forbes_2017.png)
 
 Pour synthétiser, un logiciel ERP est un moyen d'intégrer les données de tous les départements d'une entreprise en un seul système accessible par tous, afin de faciliter les échanges d'informations. Il n'a donc pas de fonction d'analyse.
 
@@ -320,7 +320,7 @@ Vient ensuite la qualité, c'est sur cette partie que mon stage portait.
 La qualité est l'ensemble des procédures permettant de vérifier le bon fonctionnement et la pertinence (par rapport au client) du logiciel.
 On peut citer comme métier associé celui de QA Lead ou responsable qualité.
 
-Dans ces trois rôles, il est important de remarquer qu'une grande partie du travail tend à rendre les processus automatiques. Et ce pour des questions de rapidité et donc de coût, et de mise à l'échelle.
+Dans ces trois rôles, il est important de remarquer qu'une grande partie du travail tend à rendre les processus automatiques. Et ce pour des questions de rapidité et donc de coût et de mise à l'échelle.
 
 ### La Qualité
 
@@ -336,9 +336,9 @@ Il existe plusieurs type de test, qui doivent être exécutés dans un certain o
 Les premiers acteurs de ces tests sont les développeurs. Ils s'occupent de faire les tests unitaires et d'intégration.
 
 Les tests unitaires sont écrits par les développeurs afin de tester une unité de programme (grossièrement une petite partie de code) ou module.  
-Pour tester ces modules, le reste du logiciel simulé à l'aide de ce qu'on appelle un "mock", c'est à dire qu'on imite l'extérieur en fournissant des données factices à cette partie du code afin de retrouver ou non les résultats attendus en sortie. Ces tests ne doivent en aucun cas dépendre de composants extérieurs comme des librairies.
+Pour tester ces modules, le reste du logiciel est simulé à l'aide de ce qu'on appelle un "mock", c'est à dire qu'on imite l'extérieur en fournissant des données factices à cette partie du code afin de retrouver ou non les résultats attendus en sortie. Ces tests ne doivent en aucun cas dépendre de composants extérieurs comme des librairies.
 
-Les tests d'intégrations quant à eux vise à s'assurer que tout fonctionne lorsque l'on assemble plusieurs modules déjà testés unitairement (et leurs dépendances).
+Les tests d'intégrations quant à eux visent à s'assurer que tout fonctionne lorsque l'on assemble plusieurs modules déjà testés unitairement (et leurs dépendances).
 
 A un niveau plus élevé vient ensuite les ingénieurs qualités. Ils réalisent pour leur part les tests fonctionnels et ceux de performances.  
 Ces tests ont intérêt a être exécutés de manière automatique: par exemple les tests doivent être faits sur différentes plateformes, différents navigateurs web... Cependant, une partie de ces tests ne peuvent être exécutés que manuellement.
@@ -379,7 +379,7 @@ Ma mission était donc d'implémenter des tests fonctionnels automatisés, pour 
 
 Les deux premières semaines ont été consacrées à se familiariser avec le logiciel SAC: ce qu'il fait, comment il fait, dans quel but etc...  
 Pour ce faire et pour contribuer au projet directement, j'ai commencé par faire des tests manuels fonctionnels directement sur le logiciel. Je suivais en fait un scenario qui utilisait une grande partie des fonctionnalités disponibles de SAC.  
-Ce scénario était stocké sur un wiki interne SAP, mais il n'était pas totalement à jour à causes des modifications apportées continuellement, autant du côté UX que du côté fonctionnalités. Ma mission était donc en parallèle de mettre à jour ce scénario appelé "BAT Scénario". (on reviendra plus tard sur le BAT signifiant Build Acceptance Testing)
+Ce scénario était stocké sur un wiki interne SAP, mais il n'était pas totalement à jour à cause des modifications apportées continuellement, autant du côté UX que du côté fonctionnalités. Ma mission était donc en parallèle de mettre à jour ce scénario appelé "BAT Scénario". (on reviendra plus tard sur le BAT signifiant Build Acceptance Testing)
 
 Pendant ce temps, je me familiarisais aussi avec mon environnement, mes équipiers, le vocabulaire interne, l'organisation, et en grande partie aussi les outils utilisés.  
 Dans ce but, j'ai participé directement à des réunions et des interviews/présentations individuels avec plusieurs membres des équipes, des repas le midi... J'ai fait beaucoup de recherches de mon côté pour me mettre à jour et pouvoir comprendre plus facilement tout ça.
@@ -484,7 +484,7 @@ Le point fort de ces jobs est qu'ils peuvent être déclenchés automatiquement 
 
 C'est ce qui est utilisé pour l'[intégration en continu](#intégration-en-continu).
 
-La suite d'action s'appelle en fait un **pipeline**: c'est la fonction phare de Jenkins. Les actions du pipeline sont exécutées chacune à la suite, jusqu'à ce qu'une d'elles échoue.
+La suite d'action s'appelle en fait un **pipeline**: c'est la fonction phare de Jenkins. Les actions du pipeline sont exécutées chacune à la suite, jusqu'à ce que l'une d'elles échoue.
 
 ### Maven: projet et build Java
 
@@ -521,7 +521,7 @@ Pour manipuler facilement le logiciel web, on utilise ces deux frameworks pour c
 
 On peut noter que le codage de ces classes demande des connaissances (que j'avais avant le stage) en HTML et CSS afin de pouvoir manipuler des composants web.
 
-L'ensemble des classes de pages, les fonctionnalités de tests ainsi mis en place forment en fait un autre framework. Ce nouvel espace de travail (spécifique au logiciel SAC) nous permet ensuite de coder directement des tests automatiques qui suivront alors le scénario que l'on veut.
+L'ensemble des classes de page et les fonctionnalités de tests ainsi implémentés forment en fait un autre framework. Ce nouvel espace de travail (spécifique au logiciel SAC) nous permet ensuite de coder directement des tests automatiques qui suivront alors le scénario que l'on veut.
 
 ## Résultats
 
@@ -561,7 +561,7 @@ Ainsi j'avais pour missions de faire toute une batterie de tests manuels sur le 
 
 Pour la gestion des bugs, SAP utilise l'outil JIRA qui permet de centraliser le suivi des bugs et des tâches (liées aux bugs ou non).
 
-# Conclusion
+# Résumé et Conclusion
 
 Pendant mon stage, j'ai travaillé sur une partie d'un logiciel SAP en cours de développement dans le **Cloud**.  
 Cependant, je n'ai pas participé directement au développement de ce logiciel mais j'ai aidé à le faciliter grâce à une activité de support: les **tests automatiques**.
@@ -674,7 +674,7 @@ Ainsi une wave dure 6 semaines, du développement à la sortie ("release").
 
 #### Intégration en continu
 
-Pour cette sous-partie, il est nécessaire d'avoir pris connaissance des Outils Git et Jenkins et Monsoon.
+Pour cette sous-partie, il est nécessaire d'avoir pris connaissance des Outils Git et Jenkins.
 
 Le principe est de pouvoir intégrer chaque commit proposé avec git directement dans la branche principale. Pour accepter cela il faut d'abord que ces commits passent une série de tests qui confirment qu'ils ne fassent pas dysfonctionner l'application.
 
@@ -708,7 +708,7 @@ Chaque composants doit-être indépendant de tout le reste et possède ses propr
 
 Les applications développées avec des micro-services sont les plus adaptées pour le développement Cloud. En effet, à l'aide de plateformes PaaS comme Cloud Foundry, il est facile et performant de connecter un ensemble de micro-services.
 
-Cela permet alors de faire des mises à jour sans *downtime* (sans que l'application soit inutilisable) avec par exemple le principe *Blue Grren Deployment*, de déployer des applications avec très peu de risque d'être "down", de multiplier ou réduire le nombre d'applications disponibles suivant les besoins...
+Cela permet alors de faire des mises à jour sans *downtime* (sans que l'application soit inutilisable) avec par exemple le principe *Blue Green Deployment*, de déployer des applications avec très peu de risque d'être "down", de multiplier ou réduire le nombre d'applications disponibles suivant les besoins...
 
 ![Les différentes étapes pour les déploiements](DevOps_Continuous.png)
 
@@ -809,7 +809,7 @@ Par un simple click, un développeur peut se procure une VM sous Linux, utilisan
 
 De plus, avec ce qu'on appelle des *ready-made* ou prêt à l'emploi, initialiser ses VMs avec l'environnement que l'on veut (OS, logiciels ...).
 
-C'est le rôle de l'Infrastructure Owner de fournir ces ready-mades.
+C'est le rôle de l'INFRA Owner de fournir ces ready-mades.
 
 SAP a la volonté de passer sur Monsoon 3.0 aussi appelé Converged Cloud. Le but est d'avoir un seul système qui permet de fournir des VMs, des *baremetal* (directement du hardware, sans logiciels/*software* dessus).
 
